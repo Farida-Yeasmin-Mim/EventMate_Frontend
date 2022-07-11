@@ -7,8 +7,8 @@ import Registration from './pages/vendor/registration';
 function App() {
   return (
     <div className="App">
-      
-       {/* <Login></Login> 
+
+      {/* <Login></Login> 
       <Signup></Signup> */}
       <Registration></Registration>
 
