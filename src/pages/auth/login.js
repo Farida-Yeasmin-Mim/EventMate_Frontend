@@ -33,19 +33,17 @@ const Login = () => {
         console.log(ok);
         let result= await fetch("https://guarded-beach-16980.herokuapp.com/api/login", {
             method:'POST',
-            // headers: {
-            //   "Content-Type":"application/json",
-            //   "Accept": "application/json"
-            // },
+            headers: {
+              "Content-Type":"application/json",
+              "Accept": "application/json"
+            },
             body:JSON.stringify(item)
         }
         ); 
         
-
         result = await result.json();
         localStorage.setItem("user-info", JSON.stringify(result))
-        // history.push("/add")
-        
+        // history.push("/add")       
 
     }
 
