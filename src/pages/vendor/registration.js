@@ -5,7 +5,7 @@ import LockResetOutlinedIcon from '@mui/icons-material/LockResetOutlined';
 
 const Registration = () => {
     const avatarStyle = { backgroundColor: '#ef73ee' }
-    const paperStyle = { padding: 40, height: '110vh', width: 400, margin: '20px auto' }  //creating paperstyle variable by using const
+    const paperStyle = { padding: 40, height: '135vh', width: 400, margin: '20px auto' }  //creating paperstyle variable by using const
     const btnStyle = { margin: '20px 10px' }
 
 
@@ -24,9 +24,13 @@ const Registration = () => {
                 <TextField id='standard-basic' label='Address' variant='standard' fullWidth required />
                 <TextField id='standard-basic' label='Contact No.' variant='standard' type='contact' fullWidth required />
                 <TextField id='standard-basic' label='Licence No.' variant='standard' fullWidth required />
+                <TextField id='standard-basic' label='Whatsapp No.' variant='standard' fullWidth required />
+                <TextField id='standard-basic' label='Facebook link' variant='standard' fullWidth required />
+                <TextField id='standard-basic' label='Linkedin link' variant='standard' fullWidth required />
+                <TextField id='standard-basic' label='Instagram link' variant='standard' fullWidth required />
+                <TextField id='standard-basic' label='Youtube link' variant='standard' fullWidth required />
                 <TextField id='standard-basic' label='Password' variant='standard' type='password' fullWidth required />
-                <TextField id='standard-basic' label='Confirm Password' variant='standard' type='password' fullWidth required />
-
+                
 
                 <br />
                 <br />

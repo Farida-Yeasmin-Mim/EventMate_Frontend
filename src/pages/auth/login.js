@@ -29,18 +29,23 @@ const Login = () => {
     async function login(){
         console.warn(username, password)
         let item = (username, password);
+        let ok= "Ok";
+        console.log(ok);
         let result= await fetch("https://guarded-beach-16980.herokuapp.com/api/login", {
             method:'POST',
             // headers: {
             //   "Content-Type":"application/json",
             //   "Accept": "application/json"
             // },
-            body:JSON.stringyfy(item)
+            body:JSON.stringify(item)
         }
         ); 
+        
+
         result = await result.json();
-        localStorage.setItem("user-info", JSON.stringyfy(result))
+        localStorage.setItem("user-info", JSON.stringify(result))
         // history.push("/add")
+        
 
     }
 
