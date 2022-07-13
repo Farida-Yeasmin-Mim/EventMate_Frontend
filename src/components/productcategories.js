@@ -6,6 +6,8 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
 
+
+//imagebackdrop giving all the images a hover color
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
   left: 0,
@@ -17,6 +19,7 @@ const ImageBackdrop = styled('div')(({ theme }) => ({
   transition: theme.transitions.create('opacity'),
 }));
 
+//botton
 const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
   display: 'block',
@@ -27,6 +30,8 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
     width: '100%',
     height: 100,
   },
+
+  //hover effect to all images
   '&:hover': {
     zIndex: 1,
   },
@@ -43,6 +48,8 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
     position: 'relative',
     padding: `${theme.spacing(2)} ${theme.spacing(4)} 14px`,
   },
+
+  //mark below in title and give transition
   '& .imageMarked': {
     height: 3,
     width: 18,
@@ -106,12 +113,13 @@ const images = [
 export default function ProductCategories() {
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
-      <Typography variant="h3" marked="center" align="center" component="h2">
+      <Typography variant="h3" align="center">
         Services
       </Typography>
-      
+
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         {images.map((image) => (
+
           <ImageIconButton
             key={image.title}
             style={{
@@ -130,6 +138,7 @@ export default function ProductCategories() {
                 backgroundImage: `url(${image.url})`,
               }}
             />
+
             <ImageBackdrop className="imageBackdrop" />
             <Box
               sx={{
@@ -144,6 +153,7 @@ export default function ProductCategories() {
                 color: 'common.white',
               }}
             >
+
               <Typography
                 component="h3"
                 variant="h6"
@@ -153,6 +163,8 @@ export default function ProductCategories() {
                 {image.title}
                 <div className="imageMarked" />
               </Typography>
+
+
             </Box>
           </ImageIconButton>
         ))}
