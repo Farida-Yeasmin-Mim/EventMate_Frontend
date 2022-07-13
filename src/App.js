@@ -4,7 +4,9 @@ import './App.css';
 //import Signup from './pages/auth/signup';
 //import Registration from './pages/vendor/registration';
 //import Navbar from './components/navbar';
-import Offer from './components/offer';
+//import Offer from './components/offer';
+import ProductCategories from './components/productcategories';
+
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Navbar> </Navbar> 
 
       <Offer></Offer>*/}
+
+      <ProductCategories></ProductCategories>
 
 
 
