@@ -12,11 +12,10 @@ function App() {
 
       {/* <Login></Login> 
       <Signup></Signup>
-       */}
-      {/* <Registration></Registration> 
-      <Navbar> </Navbar> */}
+      <Registration></Registration> 
+      <Navbar> </Navbar> 
 
-      <Offer></Offer>
+      <Offer></Offer>*/}
 
 
 
