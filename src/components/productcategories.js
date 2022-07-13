@@ -62,8 +62,8 @@ const images = [
     width: '40%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400',
-    title: 'Massage',
+    url: 'https://images.pexels.com/photos/4397882/pexels-photo-4397882.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    title: 'Gift',
     width: '20%',
   },
   {
@@ -72,8 +72,8 @@ const images = [
     width: '40%',
   },
   {
-    url: 'https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000',
-    title: 'Menu',
+    url: 'https://expertphotography.b-cdn.net/wp-content/uploads/2019/03/Chocolate-Cake-Darina-Kopcok-Expert-Phtography.jpg',
+    title: 'Cake',
     width: '38%',
   },
   {
@@ -82,23 +82,23 @@ const images = [
     width: '38%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=400',
-    title: 'Shopping',
+    url: 'https://media.istockphoto.com/photos/beautiful-asian-woman-carrying-colorful-bags-shopping-online-with-picture-id1193750118?b=1&k=20&m=1193750118&s=170667a&w=0&h=dWmXq8D_P7sHRIZn-fPNRLPJaAvSvJmeYH9Bsq8Ywhs=',
+    title: 'Outfit',
     width: '24%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?auto=format&fit=crop&w=400',
-    title: 'Walking',
+    url: 'https://image.shutterstock.com/image-photo/aguascalientes-03042019-videographer-social-events-260nw-1396920338.jpg',
+    title: 'Photography',
     width: '40%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400',
-    title: 'Fitness',
+    url: 'https://i.pinimg.com/236x/61/81/36/6181368abdcbe4543e1e0ce8a3bd2a9d.jpg',
+    title: 'Mehedi',
     width: '20%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1518136247453-74e7b5265980?auto=format&fit=crop&w=400',
-    title: 'Reading',
+    url: 'https://www.trendingus.com/wp-content/uploads/2020/02/8762b92c0fb963fb6ff658741e074ef1.jpeg',
+    title: 'Makeover',
     width: '40%',
   },
 ];
@@ -106,8 +106,8 @@ const images = [
 export default function ProductCategories() {
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
-      <Typography variant="h4" marked="center" align="center" component="h2">
-        For all tastes and all desires
+      <Typography variant="h3" marked="center" align="center" component="h2">
+        Services
       </Typography>
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         {images.map((image) => (
