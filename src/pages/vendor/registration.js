@@ -23,12 +23,12 @@ const Registration = () => {
                 <TextField id='standard-basic' label='Email' variant='standard' fullWidth required />
                 <TextField id='standard-basic' label='Address' variant='standard' fullWidth required />
                 <TextField id='standard-basic' label='Contact No.' variant='standard' type='contact' fullWidth required />
-                <TextField id='standard-basic' label='Licence No.' variant='standard' fullWidth required />
+                <TextField id='standard-basic' label='Licence No.' variant='standard' fullWidth/>
                 <TextField id='standard-basic' label='Whatsapp No.' variant='standard' fullWidth required />
-                <TextField id='standard-basic' label='Facebook link' variant='standard' fullWidth required />
-                <TextField id='standard-basic' label='Linkedin link' variant='standard' fullWidth required />
-                <TextField id='standard-basic' label='Instagram link' variant='standard' fullWidth required />
-                <TextField id='standard-basic' label='Youtube link' variant='standard' fullWidth required />
+                <TextField id='standard-basic' label='Facebook link' variant='standard' fullWidth/>
+                <TextField id='standard-basic' label='Linkedin link' variant='standard' fullWidth/>
+                <TextField id='standard-basic' label='Instagram link' variant='standard' fullWidth />
+                <TextField id='standard-basic' label='Youtube link' variant='standard' fullWidth/>
                 <TextField id='standard-basic' label='Password' variant='standard' type='password' fullWidth required />
                 
 

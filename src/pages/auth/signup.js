@@ -47,7 +47,7 @@ const Signup = () => {
                 <TextField id='standard-basic' label='Name' variant='standard' fullWidth required />
                 <TextField id='standard-basic' label='Email' variant='standard' fullWidth required />
                 <TextField id='standard-basic' label='Address' variant='standard' fullWidth required />
-                <TextField id='standard-basic' label='Date of Birth' variant='standard' fullWidth required />
+                <TextField id='standard-basic' label='Date of Birth' variant='standard' fullWidth/>
 
 
 
@@ -69,7 +69,7 @@ const Signup = () => {
 
 
                 <TextField id='standard-basic' label='Contact No.' variant='standard' type='contact' fullWidth required />
-                <TextField id='standard-basic' label='NID No.' variant='standard' fullWidth required />
+                <TextField id='standard-basic' label='NID No.' variant='standard' fullWidth/>
                 <TextField id='standard-basic' label='Password' variant='standard' type='password' fullWidth required />
                 <TextField id='standard-basic' label='Confirm Password' variant='standard' type='password' fullWidth required />
 

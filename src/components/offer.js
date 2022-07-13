@@ -72,8 +72,8 @@ function Offer() {
                             right: 0,
                             bottom: 0,
                             width: '100%',
+                            // background: 'url(/static/themes/onepirate/productCTAImageDots.png)',
                             background: 'url(eventmate/EventMate/src/images/productCTAImageDots.png)',
-                           
                         }}
                     />
                     <Box
