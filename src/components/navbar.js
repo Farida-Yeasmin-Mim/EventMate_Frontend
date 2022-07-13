@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Home', 'About', 'Services', 'Contact Us', 'LogIn', 'SignUp'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Navbar = () => {
@@ -40,6 +40,9 @@ const Navbar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          
+          
+          {/* For Left side EventMate design */}
           <Typography
             variant="h6"
             noWrap
@@ -48,14 +51,13 @@ const Navbar = () => {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            LOGO
+            EventMate
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -65,10 +67,12 @@ const Navbar = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color='inherit'
             >
               <MenuIcon />
             </IconButton>
+
+
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -87,14 +91,19 @@ const Navbar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
+              
+              {/* pages function for left bar */}
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
-            </Menu>
+
+            </Menu>  
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+
+
+          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -107,12 +116,17 @@ const Navbar = () => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'white',
               textDecoration: 'none',
             }}
           >
-            LOGO
-          </Typography>
+            EventMate
+          </Typography> */}
+          
+
+
+
+           {/* left side pages button design */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -125,12 +139,16 @@ const Navbar = () => {
             ))}
           </Box>
 
+
+           {/* right side iconbar design*/}
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src="https://avatars.githubusercontent.com/u/76836136?s=400&u=6b029a033204aea30687591bedb424dcbfbea46a&v=4" />
               </IconButton>
             </Tooltip>
+
+            
             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
@@ -147,13 +165,18 @@ const Navbar = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
+              
+              {/* settings function for right iconbar */}
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
+
             </Menu>
           </Box>
+
+
         </Toolbar>
       </Container>
     </AppBar>
