@@ -24,7 +24,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
   borderRadius: 0,
   height: '40vh',
   [theme.breakpoints.down('md')]: {
-    width: '100% !important',
+    width: '100%',
     height: 100,
   },
   '&:hover': {
@@ -109,6 +109,7 @@ export default function ProductCategories() {
       <Typography variant="h3" marked="center" align="center" component="h2">
         Services
       </Typography>
+      
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         {images.map((image) => (
           <ImageIconButton
