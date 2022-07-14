@@ -9,6 +9,8 @@ import BrushTwoToneIcon from '@mui/icons-material/BrushTwoTone';
 import PanToolTwoToneIcon from '@mui/icons-material/PanToolTwoTone';
 import CakeTwoToneIcon from '@mui/icons-material/CakeTwoTone';
 import WomanTwoToneIcon from '@mui/icons-material/WomanTwoTone';
+import RedeemTwoToneIcon from '@mui/icons-material/RedeemTwoTone';
+import PeopleAltTwoToneIcon from '@mui/icons-material/PeopleAltTwoTone';
 
 
 export default function IconTabs() {
@@ -33,6 +35,9 @@ export default function IconTabs() {
       <Tab icon={<PanToolTwoToneIcon />} iconPosition="start" label="Mehedi" />
       <Tab icon={<CakeTwoToneIcon />} iconPosition="start" label="Cake" />
       <Tab icon={<WomanTwoToneIcon />} iconPosition="start" label="Outfit" />
+      <Tab icon={<RedeemTwoToneIcon />} iconPosition="start" label="Gift" />
+      <Tab icon={<PeopleAltTwoToneIcon />} iconPosition="start" label="Volunteer" />
+      
 
     </Tabs>
   );
