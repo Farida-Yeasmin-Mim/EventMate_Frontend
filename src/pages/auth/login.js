@@ -10,7 +10,7 @@ import LockIcon from '@mui/icons-material/Lock';
 
 const Login = () => {
     const avatarStyle = { backgroundColor: '#72b972' }
-    const paperStyle = { padding: 20, height: '75vh', width: 280, margin: '20px auto' }  //creating paperstyle variable by using const
+    const paperStyle = { padding: 30, height: '75vh', width: 280, margin: '20px auto' }  //creating paperstyle variable by using const
     const btnStyle = { margin: '8px 0' }
     
     const [username, setUsername]= useState(" ");
