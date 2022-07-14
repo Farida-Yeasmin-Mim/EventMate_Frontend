@@ -4,8 +4,8 @@ import './App.css';
 //import Signup from './pages/auth/signup';
 //import Registration from './pages/vendor/registration';
 import Navbar from './components/navbar';
-//import Offer from './components/offer';
-//import ProductCategories from './components/productcategories';
+import Offer from './components/offer';
+import ProductCategories from './components/productcategories';
 import IconTabs from './components/icontabs';
 //import DecorationCard from './components/cards/decoration';
 import Services from './components/services';
@@ -19,17 +19,20 @@ function App() {
       {/* <Login></Login> 
       <Signup></Signup>
       <Registration></Registration> 
-       <ProductCategories></ProductCategories>
+      <DecorationCard></DecorationCard> */}
+      
 
-      <Offer></Offer> */}
+      
 
       
 
 
       <Navbar> </Navbar>
       <IconTabs></IconTabs>
-      {/* <DecorationCard></DecorationCard> */}
+      
       <Services></Services>
+      <Offer></Offer> 
+      <ProductCategories></ProductCategories>
       
 
 

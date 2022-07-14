@@ -73,7 +73,7 @@ function Offer() {
                             bottom: 0,
                             width: '100%',
                             // background: 'url(/static/themes/onepirate/productCTAImageDots.png)',
-                            background: 'url(eventmate/EventMate/src/images/productCTAImageDots.png)',
+                            background: 'url(https://gitlab.create-ion.at/lt/material-ui/-/raw/v4.0.2/static/themes/onepirate/productCTAImageDots.png)',
                         }}
                     />
                     <Box
