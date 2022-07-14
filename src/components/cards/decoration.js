@@ -52,7 +52,6 @@ export default function DecorationCard() {
       <CardMedia
         component="img"
         height="194"
-        //image="../../images/productCTAImageDots.png"
         image="https://images.unsplash.com/photo-1527853787696-f7be74f2e39a?auto=format&fit=crop&w=750"
         alt="Paella dish"
       />
