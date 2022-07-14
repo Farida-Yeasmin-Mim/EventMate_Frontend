@@ -108,6 +108,21 @@ const images = [
     title: 'Makeover',
     width: '40%',
   },
+  {
+    url: 'https://images.squarespace-cdn.com/content/v1/59cb3ec651a584e965963382/1522731031818-A4ZS01B04WT72ERFIO1S/IMG_2277.JPG',
+    title: 'Volunteer',
+    width: '38%',
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1540173196447-4a4acda7007e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlkZW9ncmFwaHl8ZW58MHx8MHx8&w=1000&q=80',
+    title: 'Videography',
+    width: '38%',
+  },
+  {
+    url: 'https://images.unsplash.com/photo-1518834107812-67b0b7c58434?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGFuY2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
+    title: 'Dancer',
+    width: '24%',
+  },
 ];
 
 export default function ProductCategories() {

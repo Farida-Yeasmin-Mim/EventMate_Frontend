@@ -5,7 +5,7 @@ import './App.css';
 //import Registration from './pages/vendor/registration';
 import Navbar from './components/navbar';
 //import Offer from './components/offer';
-//import ProductCategories from './components/productcategories';
+import ProductCategories from './components/productcategories';
 import IconTabs from './components/icontabs';
 //import DecorationCard from './components/cards/decoration';
 import Services from './components/services';
@@ -21,15 +21,16 @@ function App() {
       <Registration></Registration> 
        
 
-      <Offer></Offer>
-
-      <ProductCategories></ProductCategories> */}
+      <Offer></Offer> */}
 
       
-<Navbar> </Navbar>
+
+
+      <Navbar> </Navbar>
       <IconTabs></IconTabs>
       {/* <DecorationCard></DecorationCard> */}
       <Services></Services>
+      <ProductCategories></ProductCategories>
 
 
 
