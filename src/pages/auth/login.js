@@ -106,8 +106,6 @@ const Login = () => {
                 <Typography>Do you have any account?
                     <Link href="#">Sign Up</Link>
                 </Typography>
-                
-
 
 
             </Paper>
