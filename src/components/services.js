@@ -16,7 +16,7 @@ import DecorationCard from './cards/decoration';
 export default function Services() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
+      <Grid container spacing={4}>
         <Grid item xs={6} md={4}>
           <DecorationCard></DecorationCard>
         </Grid>

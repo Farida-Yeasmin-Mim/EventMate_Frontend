@@ -5,7 +5,7 @@ import './App.css';
 //import Registration from './pages/vendor/registration';
 import Navbar from './components/navbar';
 //import Offer from './components/offer';
-import ProductCategories from './components/productcategories';
+//import ProductCategories from './components/productcategories';
 import IconTabs from './components/icontabs';
 //import DecorationCard from './components/cards/decoration';
 import Services from './components/services';
@@ -19,7 +19,7 @@ function App() {
       {/* <Login></Login> 
       <Signup></Signup>
       <Registration></Registration> 
-       
+       <ProductCategories></ProductCategories>
 
       <Offer></Offer> */}
 
@@ -30,7 +30,7 @@ function App() {
       <IconTabs></IconTabs>
       {/* <DecorationCard></DecorationCard> */}
       <Services></Services>
-      <ProductCategories></ProductCategories>
+      
 
 
 

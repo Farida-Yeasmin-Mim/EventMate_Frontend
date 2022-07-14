@@ -15,6 +15,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
+
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -35,26 +36,27 @@ export default function DecorationCard() {
 
   return (
     <Card sx={{ maxWidth: 345 }}>
+      
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
-          </Avatar>
+          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">D</Avatar>
         }
         action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
+          <IconButton aria-label="settings"><MoreVertIcon /></IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title="Decorate on your own way"
+        subheader="July 14, 2022"
       />
+
+
       <CardMedia
         component="img"
         height="194"
         image="https://images.unsplash.com/photo-1527853787696-f7be74f2e39a?auto=format&fit=crop&w=750"
         alt="Paella dish"
       />
+
+
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           This impressive paella is a perfect party dish and a fun meal to cook
@@ -62,13 +64,11 @@ export default function DecorationCard() {
           if you like.
         </Typography>
       </CardContent>
+
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
+        <IconButton aria-label="add to favorites"><FavoriteIcon /></IconButton>
+        <IconButton aria-label="share"><ShareIcon /></IconButton>
+        
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
@@ -77,6 +77,8 @@ export default function DecorationCard() {
         >
           <ExpandMoreIcon />
         </ExpandMore>
+
+        
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
