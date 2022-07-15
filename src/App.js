@@ -21,13 +21,17 @@ function App() {
 
       <Navbar> </Navbar>
       <IconTabs></IconTabs>
+
+      <Services></Services>
+      <Offer></Offer>
+
       <Login></Login>
       <Signup></Signup>
       <Registration></Registration> 
       <AddDecorationsForm></AddDecorationsForm>
 
-      <Offer></Offer>
-      <Services></Services>
+      
+      
       {/* <DecorationCard></DecorationCard>  */}
       <ProductCategories></ProductCategories>
       

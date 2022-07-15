@@ -53,12 +53,6 @@ const AddDecorationsForm = () => {
                 />
 
                 <Button type='submit' variant="contained" style={btnStyle} fullWidth>Submit</Button>
-
-
-                <Typography>Already a Member?
-                    <Link href="#">Log In</Link>
-                </Typography>
-
             </Paper>
         </Grid>
 
