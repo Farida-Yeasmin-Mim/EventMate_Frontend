@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
 //import Login from './pages/auth/login';
-//import Signup from './pages/auth/signup';
+import Signup from './pages/auth/signup';
 //import Registration from './pages/vendor/registration';
 import Navbar from './components/navbar';
 //import Offer from './components/offer';
@@ -19,7 +19,7 @@ function App() {
     <div className="App">
 
       {/*  
-      <Signup></Signup>
+      
       <Registration></Registration> 
       <Login></Login>
       <Offer></Offer>
@@ -32,6 +32,7 @@ function App() {
 
       <Navbar> </Navbar>
       <IconTabs></IconTabs>
+      <Signup></Signup>
       <AddDecorationsForm></AddDecorationsForm>
       
       

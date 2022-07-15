@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Grid, Paper, Avatar, Button, FormControlLabel, TextField, Link, Typography, Checkbox} from '@mui/material';
-import SelectTextFields from '../../components/selectTextField';
+import SelectAreas from '../../components/seletionTextField/selectAreas';
 import FilterVintageTwoToneIcon from '@mui/icons-material/FilterVintageTwoTone';
 
   
@@ -31,7 +31,7 @@ const AddDecorationsForm = () => {
                 <TextField id='standard-basic' label='Inform Time' variant='standard' fullWidth/><br/><br/>
                 <TextField id='standard-basic' label='Build Time' variant='standard' fullWidth /><br/><br/>
                 <TextField id='standard-basic' label='Offered Colour' variant='standard' fullWidth/><br/><br/>
-                <SelectTextFields/><br/>
+                <SelectAreas/><br/>
                 <TextField id='standard-basic' label='Password' variant='standard' type='password' fullWidth />
                 
 

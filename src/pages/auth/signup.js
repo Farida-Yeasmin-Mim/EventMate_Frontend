@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import SelectGender from '../../components/seletionTextField/selectGender';
 
 // import Stack from "@mui/material/Stack";
 // import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
@@ -14,7 +15,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 
 const Signup = () => {
     const avatarStyle = { backgroundColor: '#cf88ce' }
-    const paperStyle = { padding: 40, height: '110vh', width: 400, margin: '20px auto' }  //creating paperstyle variable by using const
+    const paperStyle = { padding: 40, height: '150vh', width: 400, margin: '20px auto' }  //creating paperstyle variable by using const
     const btnStyle = { margin: '20px 10px' }
 
 
@@ -44,33 +45,14 @@ const Signup = () => {
                     <p>Please fill in this form to create an account</p>
                 </Grid>
 
-                <TextField id='standard-basic' label='Name' variant='standard' fullWidth required />
-                <TextField id='standard-basic' label='Email' variant='standard' fullWidth required />
-                <TextField id='standard-basic' label='Address' variant='standard' fullWidth required />
-                <TextField id='standard-basic' label='Date of Birth' variant='standard' fullWidth/>
-
-
-
-
-                {/* <LocalizationProvider dateAdapter={AdapterDateFns}>
-                    <Stack spacing={3}>
-
-                        <MobileDatePicker
-                            label="Date mobile"
-                            inputFormat="MM/dd/yyyy"
-                            value={value}
-                            onChange={handleChange}
-                            renderInput={(params) => <TextField {...params} />}
-                        />
-
-                    </Stack>
-                </LocalizationProvider> */}
-
-
-
-                <TextField id='standard-basic' label='Contact No.' variant='standard' type='contact' fullWidth required />
-                <TextField id='standard-basic' label='NID No.' variant='standard' fullWidth/>
-                <TextField id='standard-basic' label='Password' variant='standard' type='password' fullWidth required />
+                <TextField id='standard-basic' label='Name' variant='standard' fullWidth required /><br/><br/>
+                <TextField id='standard-basic' label='Email' variant='standard' fullWidth required /><br/><br/>
+                <TextField id='standard-basic' label='Address' variant='standard' fullWidth required /><br/><br/>
+                <TextField id='standard-basic' label='Date of Birth' variant='standard' fullWidth/><br/><br/>
+                <TextField id='standard-basic' label='Contact No.' variant='standard' type='contact' fullWidth required /><br/><br/>
+                <TextField id='standard-basic' label='NID No.' variant='standard' fullWidth/><br/><br/>
+                <SelectGender/>
+                <TextField id='standard-basic' label='Password' variant='standard' type='password' fullWidth required /><br/><br/>
                 <TextField id='standard-basic' label='Confirm Password' variant='standard' type='password' fullWidth required />
 
 
