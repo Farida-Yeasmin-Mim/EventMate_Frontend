@@ -10,7 +10,7 @@ import IconTabs from './components/icontabs';
 //import DecorationCard from './components/cards/decoration';
 //import Services from './components/services';
 import AddDecorationsForm from './pages/services/addDecorationsForm';
-//import SelectTextFields from './components/cards/selectTextField';
+
 
 
 
@@ -33,7 +33,6 @@ function App() {
       <Navbar> </Navbar>
       <IconTabs></IconTabs>
       <AddDecorationsForm></AddDecorationsForm>
-      {/* <SelectTextFields></SelectTextFields> */}
       
       
        
