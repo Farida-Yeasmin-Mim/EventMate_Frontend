@@ -5,7 +5,7 @@ import LockResetOutlinedIcon from '@mui/icons-material/LockResetOutlined';
 
 const Registration = () => {
     const avatarStyle = { backgroundColor: '#ef73ee' }
-    const paperStyle = { padding: 40, height: '135vh', width: 400, margin: '20px auto' }  //creating paperstyle variable by using const
+    const paperStyle = { padding: 40, height: '163vh', width: 400, margin: '20px auto' }  //creating paperstyle variable by using const
     const btnStyle = { margin: '20px 10px' }
 
 
@@ -19,16 +19,16 @@ const Registration = () => {
                 </Grid>
 
 
-                <TextField id='standard-basic' label='Name' variant='standard' fullWidth required />
-                <TextField id='standard-basic' label='Email' variant='standard' fullWidth required />
-                <TextField id='standard-basic' label='Address' variant='standard' fullWidth required />
-                <TextField id='standard-basic' label='Contact No.' variant='standard' type='contact' fullWidth required />
-                <TextField id='standard-basic' label='Licence No.' variant='standard' fullWidth/>
-                <TextField id='standard-basic' label='Whatsapp No.' variant='standard' fullWidth required />
-                <TextField id='standard-basic' label='Facebook link' variant='standard' fullWidth/>
-                <TextField id='standard-basic' label='Linkedin link' variant='standard' fullWidth/>
-                <TextField id='standard-basic' label='Instagram link' variant='standard' fullWidth />
-                <TextField id='standard-basic' label='Youtube link' variant='standard' fullWidth/>
+                <TextField id='standard-basic' label='Name' variant='standard' fullWidth required /><br/><br/>
+                <TextField id='standard-basic' label='Email' variant='standard' fullWidth required /><br/><br/>
+                <TextField id='standard-basic' label='Address' variant='standard' fullWidth required /><br/><br/>
+                <TextField id='standard-basic' label='Contact No.' variant='standard' type='contact' fullWidth required /><br/><br/>
+                <TextField id='standard-basic' label='Licence No.' variant='standard' fullWidth/><br/><br/>
+                <TextField id='standard-basic' label='Whatsapp No.' variant='standard' fullWidth required /><br/><br/>
+                <TextField id='standard-basic' label='Facebook link' variant='standard' fullWidth/><br/><br/>
+                <TextField id='standard-basic' label='Linkedin link' variant='standard' fullWidth/><br/><br/>
+                <TextField id='standard-basic' label='Instagram link' variant='standard' fullWidth /><br/><br/>
+                <TextField id='standard-basic' label='Youtube link' variant='standard' fullWidth/><br/><br/>
                 <TextField id='standard-basic' label='Password' variant='standard' type='password' fullWidth required />
                 
 
