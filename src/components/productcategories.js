@@ -129,7 +129,7 @@ export default function ProductCategories() {
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
       <Typography variant="h3" align="center">
-        Services
+        Choose Your Categories
       </Typography>
 
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
