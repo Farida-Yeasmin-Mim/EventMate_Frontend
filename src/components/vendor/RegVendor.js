@@ -3,7 +3,7 @@ import { Grid, Paper, Avatar, Button, FormControlLabel, TextField, Link, Typogra
 import LockResetOutlinedIcon from '@mui/icons-material/LockResetOutlined';
 
 
-const Registration = () => {
+const RegVendor = () => {
     const avatarStyle = { backgroundColor: '#ef73ee' }
     const paperStyle = { padding: 40, height: '163vh', width: 400, margin: '20px auto' }  //creating paperstyle variable by using const
     const btnStyle = { margin: '20px 10px' }
@@ -56,4 +56,4 @@ const Registration = () => {
 
     )
 }
-export default Registration;
+export default RegVendor;

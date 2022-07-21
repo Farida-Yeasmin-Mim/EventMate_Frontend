@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Grid, Paper, Avatar, TextField, Link, Typography} from '@mui/material';
 import Button from '@mui/material/Button';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import LockIcon from '@mui/icons-material/Lock';
-//import {useHistory} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+
 
 
 
@@ -15,35 +17,40 @@ const Login = () => {
     
     const [username, setUsername]= useState(" ");
     const [password, setPassword]= useState(" ");
-    //const history =useHistory();
+    const [result, setResult]= useState(" "); 
+    const navigate = useNavigate();
 
-    // useEffect(()=>{
-    //     /if(localStorage.getItem('user-info'))
-    // //     {
-    // //     //     history.push("/add")
-    // //     // }
-    // // },[]
-    // )
+    useEffect(()=>{
+        if(localStorage.getItem('user-info'))
+        {
+            // navigate('/feed');
+        }
+    },[]
+    )
 
 
     async function login(){
-        console.warn(username, password)
-        let item = (username, password);
-        let ok= "Ok";
-        console.log(ok);
-        let result= await fetch("https://guarded-beach-16980.herokuapp.com/api/login", {
-            method:'POST',
-            headers: {
-              "Content-Type":"application/json",
-              "Accept": "application/json"
-            },
-            body:JSON.stringify(item)
-        }
-        ); 
+        // console.warn(username, password)
+        let item = {
+            email: username, 
+            password: password
+        };
+
+        const headers = { 
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        };
         
-        result = await result.json();
-        localStorage.setItem("user-info", JSON.stringify(result))
-        // history.push("/add")       
+        // axios.post('https://guarded-beach-16980.herokuapp.com/api/login', item,  {headers})
+        axios.post('http://127.0.0.1:8000/api/login',item, {headers})
+            .then(response => setResult({ info: response.data}))
+            .catch(error => {
+                //this.setResult({ errorMessage: error.message });
+                console.error('There was an error!', error);
+        });
+        // history.push("/add")  
+        console.log(result.info.data);
+        localStorage.setItem("user-info", result.info)
 
     }
 
