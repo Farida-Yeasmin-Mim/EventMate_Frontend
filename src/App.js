@@ -3,7 +3,6 @@ import './App.css';
 import Login from './pages/auth/login';
 import Signup from './pages/auth/signup';
 import Registration from './components/vendor/registration';
-//import Navbar from './components/navbar';
 import Offer from './components/offer';
 import ProductCategories from './components/productcategories';
 import IconTabs from './components/icontabs';
@@ -34,7 +33,8 @@ function App() {
       <Login></Login>
       <Signup></Signup>
       <Registration></Registration> 
-      <AddDecorationsForm></AddDecorationsForm> */}
+       <AddDecorationsForm></AddDecorationsForm>  */}
+       
 
       
       
@@ -43,9 +43,11 @@ function App() {
     <Navbar/>  
     {/* <Home/> */}
     {/* <Feed/> */}
-    {/* <Dashboard/> */}
-    {/* <CreateEvent/> */}
-    <OrderDetails/>
+    {/* <Dashboard/> 
+    <OrderDetails/> */}
+    <CreateEvent/>
+    
+   
 
     </div>
   );
