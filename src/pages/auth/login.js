@@ -36,21 +36,28 @@ const Login = () => {
             password: password
         };
 
-        const headers = { 
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-        };
+        // const headers = { 
+        //     "Content-Type": "application/json",
+        //     "Accept": "application/json",
+        // };
         
         // axios.post('https://guarded-beach-16980.herokuapp.com/api/login', item,  {headers})
-        axios.post('http://127.0.0.1:8000/api/login',item, {headers})
-            .then(response => setResult({ info: response.data}))
+        // axios.post('login',item, {headers})
+        axios.post('login',item)
+            // .then(response => setResult({ info: response.data}))
+            .then((response) => {
+                setResult(response.data)
+                console.log(result.data);
+                console.log("Token " + result.token);
+                localStorage.setItem("user-name", result.data.name)
+                localStorage.setItem("token", result.token)
+            })
             .catch(error => {
                 //this.setResult({ errorMessage: error.message });
                 console.error('There was an error!', error);
         });
-        // history.push("/add")  
-        console.log(result.info.data);
-        localStorage.setItem("user-info", result.info)
+        
+        //navigate('/feed'); 
 
     }
 
