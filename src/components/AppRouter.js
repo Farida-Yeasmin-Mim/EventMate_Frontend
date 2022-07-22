@@ -11,6 +11,9 @@ import Feed from './feed/Feed';
 import Navbar from './Navbar';
 import Dashboard from './vendor/Dashboard';
 import Vendor_reg from './vendor/RegVendor';
+import Offer from './Offer';
+import ProductCategories from './productcategories';
+import AddDecorationsForm from '../pages/services/addDecorationsForm';
 
 
 function AppRouter(props) {
@@ -29,6 +32,15 @@ function AppRouter(props) {
                 <Route path="/event_create" element={<CreateEvent/>} />
                 <Route path="/select_services" element={<SelectServices/>} />
                 <Route path="/Order_details" element={<OrderDetails/>} />
+                <Route path="/Offer" element={<Offer/>} />
+                <Route path="/productcategories" element={<ProductCategories/>} /> 
+                <Route path="/addDecorationsForm" element={<AddDecorationsForm/>} />
+                <Route path="/CreateEvent" element={<CreateEvent/>} /> 
+                    
+                
+                                                                {/* path="file name" element="file function" */}
+
+                
             </Routes>
            
       </Router>
