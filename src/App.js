@@ -4,7 +4,7 @@ import Login from './pages/auth/Login';
 import Signup from './pages/auth/Signup';
 import Registration from './components/vendor/RegVendor';
 //import Navbar from './components/navbar';
-import Offer from './components/offer';
+import Offer from './components/Offer';
 import ProductCategories from './components/productcategories';
 import IconTabs from './components/icontabs';
 //import DecorationCard from './components/cards/decoration';
