@@ -19,7 +19,7 @@ const Login = () => {
     
     const [username, setUsername]= useState(" ");
     const [password, setPassword]= useState(" ");
-    const [result, setResult]= useState(" "); 
+    // const [result, setResult]= useState(" "); 
     const navigate = useNavigate();
 
     
@@ -34,11 +34,10 @@ const Login = () => {
         // const headers = { 
         //     "Content-Type": "application/json",
         //     "Accept": "application/json",
-        // };      
-        // axios.post('login',item, {headers})
-        // let result = {};
-
-
+        // };
+        
+        axios.post('login',item, {headers})
+        let result = {};
         axios.post('login',item)
             .then((response) => {
                 // setResult(response.data)

@@ -7,7 +7,6 @@ import LockIcon from '@mui/icons-material/Lock';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import PostRequest from '../../components/PostRequest';
-import { render } from '@testing-library/react';
 
 
 
@@ -19,13 +18,12 @@ const Login = () => {
     
     const [username, setUsername]= useState(" ");
     const [password, setPassword]= useState(" ");
-    const [result, setResult]= useState(" "); 
+    // const [result, setResult]= useState(" "); 
     const navigate = useNavigate();
 
-    
-    async function submit(){
+    async function login(){
         // console.warn(username, password)
-
+        <PostRequest to="abcd" with="data" />
         let item = {
             email: username, 
             password: password
@@ -34,12 +32,13 @@ const Login = () => {
         // const headers = { 
         //     "Content-Type": "application/json",
         //     "Accept": "application/json",
-        // };      
+        // };
+        
+        // axios.post('https://guarded-beach-16980.herokuapp.com/api/login', item,  {headers})
         // axios.post('login',item, {headers})
-        // let result = {};
-
-
+        let result = {};
         axios.post('login',item)
+            // .then(response => setResult({ info: response.data}))
             .then((response) => {
                 // setResult(response.data)
                 result= response.data
@@ -103,7 +102,7 @@ const Login = () => {
                     
                     label="Remember me"
                 />
-                <Button onClick={submit} type='submit' variant="contained" style={btnStyle} fullWidth>Log In</Button>
+                <Button onClick={login} type='submit' variant="contained" style={btnStyle} fullWidth>Log In</Button>
 
                 <br/>
                 <br/>

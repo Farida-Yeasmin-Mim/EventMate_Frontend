@@ -19,11 +19,11 @@ const Login = () => {
     
     const [username, setUsername]= useState(" ");
     const [password, setPassword]= useState(" ");
-    const [result, setResult]= useState(" "); 
+    // const [result, setResult]= useState(" "); 
     const navigate = useNavigate();
 
     
-    async function submit(){
+    async function login(){
         // console.warn(username, password)
 
         let item = {
@@ -34,11 +34,10 @@ const Login = () => {
         // const headers = { 
         //     "Content-Type": "application/json",
         //     "Accept": "application/json",
-        // };      
-        // axios.post('login',item, {headers})
-        // let result = {};
-
-
+        // };
+        
+        axios.post('login',item, {headers})
+        let result = {};
         axios.post('login',item)
             .then((response) => {
                 // setResult(response.data)
@@ -103,7 +102,7 @@ const Login = () => {
                     
                     label="Remember me"
                 />
-                <Button onClick={submit} type='submit' variant="contained" style={btnStyle} fullWidth>Log In</Button>
+                <Button onClick={sent} type='submit' variant="contained" style={btnStyle} fullWidth>Log In</Button>
 
                 <br/>
                 <br/>
@@ -116,6 +115,7 @@ const Login = () => {
                 <Typography>Do you have any account?
                     <Link href="#">Sign Up</Link>
                 </Typography>
+                {/* <PostRequest/> */}
 
 
             </Paper>

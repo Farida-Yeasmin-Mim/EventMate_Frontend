@@ -7,7 +7,6 @@ import LockIcon from '@mui/icons-material/Lock';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import PostRequest from '../../components/PostRequest';
-import { render } from '@testing-library/react';
 
 
 
@@ -19,41 +18,41 @@ const Login = () => {
     
     const [username, setUsername]= useState(" ");
     const [password, setPassword]= useState(" ");
-    const [result, setResult]= useState(" "); 
+    // const [result, setResult]= useState(" "); 
     const navigate = useNavigate();
 
-    
-    async function submit(){
+    async function login(){
         // console.warn(username, password)
-
-        let item = {
-            email: username, 
-            password: password
-        };
+        <PostRequest to="abcd" with="data" />
+        // let item = {
+        //     email: username, 
+        //     password: password
+        // };
 
         // const headers = { 
         //     "Content-Type": "application/json",
         //     "Accept": "application/json",
-        // };      
+        // };
+        
+        // axios.post('https://guarded-beach-16980.herokuapp.com/api/login', item,  {headers})
         // axios.post('login',item, {headers})
         // let result = {};
+        // axios.post('login',item)
+        //     // .then(response => setResult({ info: response.data}))
+        //     .then((response) => {
+        //         // setResult(response.data)
+        //         result= response.data
+        //         console.log(result.data);
+        //         console.log("Token " + result.token);
+        //         localStorage.setItem("user-name", result.data.name)
+        //         localStorage.setItem("token", result.token);
+        //         navigate('/feed');
 
-
-        axios.post('login',item)
-            .then((response) => {
-                // setResult(response.data)
-                result= response.data
-                console.log(result.data);
-                console.log("Token " + result.token);
-                localStorage.setItem("user-name", result.data.name)
-                localStorage.setItem("token", result.token);
-                navigate('/feed');
-
-            })
-            .catch(error => {
-                //this.setResult({ errorMessage: error.message });
-                console.error('There was an error!', error);
-        });
+        //     })
+        //     .catch(error => {
+        //         //this.setResult({ errorMessage: error.message });
+        //         console.error('There was an error!', error);
+        // });
         
     }
 
@@ -103,7 +102,7 @@ const Login = () => {
                     
                     label="Remember me"
                 />
-                <Button onClick={submit} type='submit' variant="contained" style={btnStyle} fullWidth>Log In</Button>
+                <Button onClick={login} type='submit' variant="contained" style={btnStyle} fullWidth>Log In</Button>
 
                 <br/>
                 <br/>
