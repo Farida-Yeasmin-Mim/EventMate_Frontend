@@ -11,6 +11,7 @@ const RegVendor = () => {
     const avatarStyle = { backgroundColor: '#ef73ee' }
     const paperStyle = { padding: 40, height: '163vh', width: 400, margin: '20px auto' }  //creating paperstyle variable by using const
     const btnStyle = { margin: '20px 10px' }
+
     const [name, setName] = useState(" ");
     const [email, setEmail] = useState(" ");
 
@@ -49,16 +50,97 @@ const RegVendor = () => {
                 </Grid>
 
 
-                <TextField id='standard-basic' onChange={(e)=>setName(e.target.value)} label='Name' variant='standard' fullWidth required /><br/><br/>
-                <TextField id='standard-basic' onChange={(e)=>setEmail(e.target.value)}label='Email' variant='standard' fullWidth required/><br/><br/>
-                <TextField id='standard-basic' label='Address' variant='standard' fullWidth  /><br/><br/>
-                <TextField id='standard-basic' label='Contact No.' variant='standard' type='contact' fullWidth  /><br/><br/>
-                <TextField id='standard-basic' label='Licence No.' variant='standard' fullWidth/><br/><br/>
-                <TextField id='standard-basic' label='Whatsapp No.' variant='standard' fullWidth  /><br/><br/>
-                <TextField id='standard-basic' label='Facebook link' variant='standard' fullWidth/><br/><br/>
-                <TextField id='standard-basic' label='Linkedin link' variant='standard' fullWidth/><br/><br/>
-                <TextField id='standard-basic' label='Instagram link' variant='standard' fullWidth /><br/><br/>
-                <TextField id='standard-basic' label='Youtube link' variant='standard' fullWidth/><br/><br/>
+                <TextField 
+                id='name'
+                label='Name'
+                name="name"
+                variant='standard'
+                fullWidth
+                required
+                onChange={(e)=>setName(e.target.value)}/>
+                <br/><br/>
+                
+                <TextField 
+                id='email'
+                label='Email'
+                name="email"
+                variant='standard'
+                fullWidth
+                required 
+                onChange={(e)=>setEmail(e.target.value)}
+                /><br/><br/>
+                
+                <TextField 
+                id='address'
+                label='Address'
+                name="address"
+                variant='standard'
+                fullWidth
+                onChange={(e)=>setAddress(e.target.value)}  />
+                <br/><br/>
+
+                <TextField 
+                id='contact'
+                label='Contact No.'
+                name="contact"
+                variant='standard'
+                fullWidth
+                onChange={(e)=>setContact(e.target.value)} 
+                /><br/><br/>
+                
+                <TextField 
+                id='licence'
+                label='Licence No.'
+                name="licence"
+                variant='standard'
+                fullWidth 
+                onChange={(e)=>setNid(e.target.value)}/>
+                <br/><br/>
+                
+                <TextField 
+                id='whatsapp'
+                label='WhatsApp No.'
+                name="whatsapp"
+                variant='standard'
+                fullWidth 
+                onChange={(e)=>setNid(e.target.value)}
+                /><br/><br/>
+
+                <TextField 
+                id='facebook'
+                label='Facebook Link'
+                name="facebook"
+                variant='standard'
+                fullWidth 
+                onChange={(e)=>setNid(e.target.value)}
+                /><br/><br/>
+
+                <TextField 
+                id='linkedin'
+                label='Linkedin Link'
+                name="linkedin"
+                variant='standard'
+                fullWidth 
+                onChange={(e)=>setNid(e.target.value)}
+                /><br/><br/>
+                
+                <TextField 
+                id='instagram'
+                label='Instagram Link'
+                name="instagram"
+                variant='standard'
+                fullWidth 
+                onChange={(e)=>setNid(e.target.value)}/>
+                <br/><br/>
+                
+                <TextField 
+                id='youtube'
+                label='Youtube Link'
+                name="youtube"
+                variant='standard'
+                fullWidth 
+                onChange={(e)=>setNid(e.target.value)}/>
+                <br/><br/>
                 
 
                 <br />
