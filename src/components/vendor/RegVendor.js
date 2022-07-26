@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Grid, Paper, Avatar, Button, FormControlLabel, TextField, Link, Typography, Checkbox } from '@mui/material';
+import { Grid, Paper, Avatar, Button, TextField} from '@mui/material';
 import LockResetOutlinedIcon from '@mui/icons-material/LockResetOutlined';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Link as RLink } from "react-router-dom";
@@ -14,6 +14,14 @@ const RegVendor = () => {
 
     const [name, setName] = useState(" ");
     const [email, setEmail] = useState(" ");
+    const [address, setAddress] = useState(" ");
+    const [contact, setContact] = useState(" ");
+    const [licence, setLicence] = useState(" ");
+    const [whatsapp, setWhatsApp] = useState(" ");
+    const [facebook, setFacebook] = useState(" ");
+    const [linkedin, setLinkedin] = useState(" ");
+    const [instagram, setInstagram] = useState(" ");
+    const [youtube, setYoutube] = useState(" ");
 
 
     const [result, setResult] = useState(" ");
@@ -23,7 +31,18 @@ const RegVendor = () => {
         // console.warn(username, password)
         let item = {
             name: name,
-            email: email
+            email: email,
+            address: address,
+            contact: contact,
+            licence: licence,
+            whatsapp: whatsapp,
+            facebook: facebook,
+            linkedin: linkedin,
+            instagram: instagram,
+            youtube:youtube,
+
+
+
             
         };
         console.log(localStorage.getItem('token'));
@@ -94,7 +113,7 @@ const RegVendor = () => {
                 name="licence"
                 variant='standard'
                 fullWidth 
-                onChange={(e)=>setNid(e.target.value)}/>
+                onChange={(e)=>setLicence(e.target.value)}/>
                 <br/><br/>
                 
                 <TextField 
@@ -103,7 +122,7 @@ const RegVendor = () => {
                 name="whatsapp"
                 variant='standard'
                 fullWidth 
-                onChange={(e)=>setNid(e.target.value)}
+                onChange={(e)=>setWhatsApp(e.target.value)}
                 /><br/><br/>
 
                 <TextField 
@@ -112,7 +131,7 @@ const RegVendor = () => {
                 name="facebook"
                 variant='standard'
                 fullWidth 
-                onChange={(e)=>setNid(e.target.value)}
+                onChange={(e)=>setFacebook(e.target.value)}
                 /><br/><br/>
 
                 <TextField 
@@ -121,7 +140,7 @@ const RegVendor = () => {
                 name="linkedin"
                 variant='standard'
                 fullWidth 
-                onChange={(e)=>setNid(e.target.value)}
+                onChange={(e)=>setLinkedin(e.target.value)}
                 /><br/><br/>
                 
                 <TextField 
@@ -130,7 +149,7 @@ const RegVendor = () => {
                 name="instagram"
                 variant='standard'
                 fullWidth 
-                onChange={(e)=>setNid(e.target.value)}/>
+                onChange={(e)=>setInstagram(e.target.value)}/>
                 <br/><br/>
                 
                 <TextField 
@@ -139,7 +158,7 @@ const RegVendor = () => {
                 name="youtube"
                 variant='standard'
                 fullWidth 
-                onChange={(e)=>setNid(e.target.value)}/>
+                onChange={(e)=>setYoutube(e.target.value)}/>
                 <br/><br/>
                 
 
