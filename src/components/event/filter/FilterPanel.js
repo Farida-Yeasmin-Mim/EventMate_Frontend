@@ -1,10 +1,23 @@
 import React from 'react'
+import FilterListToggle from '../../event/filter/FilterListToggle';
 
-const FilterPanel = () => {
+const FilterPanel = ({categoryList, selectedCategory, selectToggle}) => {
   return (
     <div>
-        <h1>Filter Panel</h1>
-        
+        {/* Category */}
+        <div className= "input-group">
+          <p className="label"> Category</p>
+          <FilterListToggle 
+          options ={categoryList} 
+          value={selectedCategory} 
+          selectToggle={selectToggle}/>
+        </div>
+
+        {/* Cuisine */}
+
+        {/* Price Range */}
+
+        {/* Star Rating */}
     </div>
   )
 }
