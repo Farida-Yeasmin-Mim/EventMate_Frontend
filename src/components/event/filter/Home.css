@@ -22,11 +22,9 @@
   }
   
   .home_panel-wrap{
-  background: red;
   flex-basis: 280px;
   }
     
   .home_list-wrap{
-    background-color: blue;
     flex: 1;
   } 

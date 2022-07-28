@@ -1,9 +1,18 @@
 import React from 'react'
+import SearchIcon from '@mui/icons-material/Search';
+import '../../event/filter/SearchBar.css'; 
 
-const SearchBar = () => {
+const SearchBar = ({value, changeInput}) => {
   return (
-    <div>
-      <h1>Search Bar</h1>
+    <div className= "searchBar-wrap">
+      <SearchIcon className="searchBar-icon"/>
+      <input 
+      type="text" 
+      placeholder ="Woodland Hilss" 
+      value={value} 
+      onChange={changeInput} 
+      />
+      
     </div>
   )
 }
