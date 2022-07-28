@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import SearchBar from '../../event/filter/SearchBar';
 import FilterPanel from '../../event/filter/FilterPanel';
 import List from '../../event/filter/List';
 
 const Home = () => {
+    const [selectedCategory, setSelectedCategory]= useState (null)
+    const handleSelectCategory=(event, value)=> 
+    !value ? null : setSelectedCategory (value);
+
   return (
       
       <div className="home">
@@ -14,7 +18,10 @@ const Home = () => {
         <div className="home_panelList-wrap">
           <div className="home_panel-wrap">
             {/* Filter Panel */}
-            <FilterPanel />
+            <FilterPanel 
+            selectToggle={handleSelectCategory}
+            selectedCategory={selectedCategory}
+            />
 
           </div>
 
