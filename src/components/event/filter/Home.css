@@ -1,0 +1,32 @@
+.home {
+    /* display: flex; */
+    /* flex-direction: coloumn;
+    height: 100vh; */
+    
+    }
+  
+    /* scrollbar in y axis */
+    .home_panelList-wrap,
+    .home_panel-wrap,
+    .home_list-wrap{
+      overflow-y: auto;
+
+    }
+  
+  
+  .home_panelList-wrap {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+
+  }
+  
+  .home_panel-wrap{
+  background: red;
+  flex-basis: 280px;
+  }
+    
+  .home_list-wrap{
+    background-color: blue;
+    flex: 1;
+  } 
