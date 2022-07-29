@@ -20,7 +20,6 @@ import Notification from './components/Notification';
 
 import Home from './components/event/filter/Home';
 import SearchBar from './components/event/filter/SearchBar';
-import FilterPanel from './components/event/filter/FilterPanel';
 
 
 
@@ -51,16 +50,15 @@ function App() {
     {/* <CreateEvent/> */}
     {/* <OrderDetails/> */}
       
-      <Home/>
+      {/* <Home/> */}
 
-      {/* <SearchBar/> */}
-      
+      <SearchBar/>
 
       {/* <Notification/>
       <AppRouter/> */}
 
 
-    {/* <h1>hello</h1> */}
+    
     </div>
   );
 }

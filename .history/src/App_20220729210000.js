@@ -16,11 +16,13 @@ import Dashboard from './components/vendor/Dashboard';
 import CreateEvent from './components/event/CreateEvent';
 import OrderDetails from './components/event/OrderDetails';
 import AppRouter from './components/AppRouter';
+<<<<<<< HEAD
 import Notification from './components/Notification';
 
+=======
 import Home from './components/event/filter/Home';
 import SearchBar from './components/event/filter/SearchBar';
-import FilterPanel from './components/event/filter/FilterPanel';
+>>>>>>> c99b04d4db9ef9ceb9e1ba67b2b5a1123ce600f6
 
 
 
@@ -51,16 +53,15 @@ function App() {
     {/* <CreateEvent/> */}
     {/* <OrderDetails/> */}
       
-      <Home/>
+      {/* <Home/> */}
 
-      {/* <SearchBar/> */}
-      
+      <SearchBar/>
 
       {/* <Notification/>
       <AppRouter/> */}
 
 
-    {/* <h1>hello</h1> */}
+    
     </div>
   );
 }

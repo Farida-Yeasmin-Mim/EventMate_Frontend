@@ -51,7 +51,7 @@ function App() {
     {/* <CreateEvent/> */}
     {/* <OrderDetails/> */}
       
-      <Home/>
+      {/* <Home/> */}
 
       {/* <SearchBar/> */}
       
@@ -60,7 +60,7 @@ function App() {
       <AppRouter/> */}
 
 
-    {/* <h1>hello</h1> */}
+    <h1>hello</h1>
     </div>
   );
 }

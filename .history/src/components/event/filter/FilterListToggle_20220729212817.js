@@ -2,7 +2,7 @@ import React from 'react'
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 // import {makeStyles } from '@mui/material';
-import { makeStyles } from '@mui/styles';
+import makeStyles from '@mui/styles';
 // import {makeStyles } from '@mui/core/styles'
 
 

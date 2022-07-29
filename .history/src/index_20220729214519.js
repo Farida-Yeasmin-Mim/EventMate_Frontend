@@ -13,10 +13,10 @@ axios.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getIte
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Context>
+    <Context>
       <App />
-    </Context> */}
-  <App/>
+    </Context>
+  {/* <App/> */}
   {/* <h1>heeeeeeeeeeeeeeee</h1> */}
   </React.StrictMode>
   

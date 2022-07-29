@@ -51,16 +51,25 @@ function App() {
     {/* <CreateEvent/> */}
     {/* <OrderDetails/> */}
       
-      <Home/>
+      {/* <Home/> */}
 
       {/* <SearchBar/> */}
-      
+      <FilterPanel
+            // selectToggle={handleSelectCategory}
+            // selectedCategory={selectedCategory}
+            // selectRating={handleSelectRating}
+            // selectedRating={selectedRating}
+            // decoration={decoration}
+            // changeChecked={handlechangeChecked}
+            // selectedPrice={selectedPrice}
+            // changePrice={handleChangePrice}
+          />
 
       {/* <Notification/>
       <AppRouter/> */}
 
 
-    {/* <h1>hello</h1> */}
+    
     </div>
   );
 }

@@ -16,8 +16,8 @@ root.render(
     {/* <Context>
       <App />
     </Context> */}
-  <App/>
-  {/* <h1>heeeeeeeeeeeeeeee</h1> */}
+  {/* <App/> */}
+  <h1>heeeeeeeeeeeeeeee</h1>
   </React.StrictMode>
   
 );
