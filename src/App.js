@@ -3,14 +3,13 @@ import './App.css';
 import Login from './pages/auth/Login';
 import Signup from './pages/auth/Signup';
 import Registration from './components/vendor/RegVendor';
-//import Navbar from './components/navbar';
 import Offer from './components/Offer';
 import ProductCategories from './components/productcategories';
 import IconTabs from './components/icontabs';
 //import DecorationCard from './components/cards/decoration';
 import Services from './components/services';
 import AddDecorationsForm from './pages/services/addDecorationsForm';
-import Home from './pages/Home';
+//import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Feed from './components/feed/Feed';
 import Dashboard from './components/vendor/Dashboard';
@@ -19,6 +18,8 @@ import OrderDetails from './components/event/OrderDetails';
 import AppRouter from './components/AppRouter';
 import Notification from './components/Notification';
 
+import Home from './components/event/filter/Home';
+import SearchBar from './components/event/filter/SearchBar';
 
 
 
@@ -26,8 +27,8 @@ function App() {
   return (
     <div className="App">
 
-{/* 
-      <Navbar> </Navbar>
+      {/* 
+      
       <IconTabs></IconTabs>
 
       <Services></Services>
@@ -38,8 +39,8 @@ function App() {
       <Registration></Registration> 
       <AddDecorationsForm></AddDecorationsForm> */}
 
-      
-      
+
+
       {/* <DecorationCard></DecorationCard>  */}
       {/* <ProductCategories></ProductCategories> */}
     {/* <Navbar/>   */}
@@ -48,8 +49,16 @@ function App() {
     {/* <Dashboard/> */}
     {/* <CreateEvent/> */}
     {/* <OrderDetails/> */}
-      <Notification/>
-      <AppRouter/>
+      
+      {/* <Home/> */}
+
+      <SearchBar/>
+
+      {/* <Notification/>
+      <AppRouter/> */}
+
+
+    
     </div>
   );
 }
