@@ -1,10 +1,15 @@
 import React from 'react'
+import ListItem from './ListIltem';
+import '../../event/filter/List.css';
 
-const List = () => {
+
+const List = ({ list }) => {
   return (
-    <div>
-      <h1>List</h1>
-      
+    <div classNmae="list-wrap">
+      {list.map((item) => (
+        <ListItem key={item.id} item={item} />
+      ))}
+
     </div>
   )
 }
