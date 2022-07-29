@@ -2,6 +2,8 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import {Grid} from '@mui/material';
 import { Link } from "react-router-dom";
+import Pusher from "pusher-js"
+import Echo from 'laravel-echo';
 
 
 function Feed(props) {

@@ -17,7 +17,6 @@ import Dashboard from './components/vendor/Dashboard';
 import CreateEvent from './components/event/CreateEvent';
 import OrderDetails from './components/event/OrderDetails';
 import AppRouter from './components/AppRouter';
-import Notification from './components/Notification';
 
 
 
@@ -48,7 +47,6 @@ function App() {
     {/* <Dashboard/> */}
     {/* <CreateEvent/> */}
     {/* <OrderDetails/> */}
-      <Notification/>
       <AppRouter/>
     </div>
   );
