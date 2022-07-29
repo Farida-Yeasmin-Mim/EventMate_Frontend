@@ -14,8 +14,6 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { Link as RLink } from "react-router-dom";
-import {Button} from '@mui/material';
 
 
 const ExpandMore = styled((props) => {
@@ -68,7 +66,6 @@ export default function DecorationCard() {
       </CardContent>
 
       <CardActions disableSpacing>
-      <RLink to="/Order_details" style={{ textDecoration: 'none' }}><Button variant="contained">Select Vendor</Button></RLink>
         <IconButton aria-label="add to favorites"><FavoriteIcon /></IconButton>
         <IconButton aria-label="share"><ShareIcon /></IconButton>
 

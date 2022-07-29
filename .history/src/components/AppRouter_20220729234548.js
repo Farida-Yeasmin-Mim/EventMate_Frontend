@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from '../pages/auth/Login';
 import Logout from '../pages/auth/Logout';
 import Signup from '../pages/auth/Signup';
-import Home from '../pages/Home';
+// import Home from '../pages/Home';
 import CreateEvent from './event/CreateEvent';
 import OrderDetails from './event/OrderDetails';
 import SelectServices from './event/SelectServices';
@@ -14,7 +14,6 @@ import Vendor_reg from './vendor/RegVendor';
 import Offer from './Offer';
 import ProductCategories from './productcategories';
 import AddDecorationsForm from '../pages/services/addDecorationsForm';
-import FilterPage from './event/filter/FilterPage';
 
 
 function AppRouter(props) {
@@ -33,7 +32,8 @@ function AppRouter(props) {
                 <Route path="/event_create" element={<CreateEvent/>} />
                 <Route path="/productcategories" element={<ProductCategories/>} /> 
                 {/* <Route path="/select_services" element={<SelectServices/>} /> */}
-                <Route path="/select_services" element={<FilterPage/>} />
+                {/* <Route path="/select_services" element={<SelectServices/>} /> */}
+                <Home
                 <Route path="/Order_details" element={<OrderDetails/>} />
                 <Route path="/Offer" element={<Offer/>} />
                 <Route path="/addDecorationsForm" element={<AddDecorationsForm/>} />

@@ -18,7 +18,7 @@ import OrderDetails from './components/event/OrderDetails';
 import AppRouter from './components/AppRouter';
 import Notification from './components/Notification';
 
-import Home from './components/event/filter/FilterPage';
+import Home from './components/event/filter/Home';
 import SearchBar from './components/event/filter/SearchBar';
 import FilterPanel from './components/event/filter/FilterPanel';
 
@@ -42,8 +42,8 @@ function App() {
 
 
 
-    {/* <DecorationCard></DecorationCard>  */}
-    {/* <ProductCategories></ProductCategories> */}
+      {/* <DecorationCard></DecorationCard>  */}
+      {/* <ProductCategories></ProductCategories> */}
     {/* <Navbar/>   */}
     {/* <Home/> */}
     {/* <Feed/> */}
