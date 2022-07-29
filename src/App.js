@@ -17,6 +17,9 @@ import CreateEvent from './components/event/CreateEvent';
 import OrderDetails from './components/event/OrderDetails';
 import AppRouter from './components/AppRouter';
 import Home from './components/event/filter/Home';
+import SearchBar from './components/event/filter/SearchBar';
+
+
 
 function App() {
   return (
@@ -44,7 +47,9 @@ function App() {
       {/* <Dashboard/> */}
       {/* <CreateEvent/> */}
       {/* <OrderDetails/> */}
-      <Home/>
+      {/* <Home/> */}
+
+      <SearchBar/>
 
 
       

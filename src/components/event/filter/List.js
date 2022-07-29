@@ -1,6 +1,6 @@
 import React from 'react'
-import ListItem from './ListIltem';
 import '../../event/filter/List.css';
+import ListItem from './ListItem';
 
 
 const List = ({ list }) => {
