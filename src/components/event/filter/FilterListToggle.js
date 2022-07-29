@@ -1,5 +1,7 @@
-import { ToggleButton, ToggleButtonGroup, makeStyles } from '@mui/material'
 import React from 'react'
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import {makeStyles } from '@mui/material'
 
 
 
@@ -8,7 +10,9 @@ const useStyles = makeStyles({
         width: '100%',
         justifyContent: 'space-between',
     },
-    
+
+
+    // multiple properties inside toggle class
     toggle: {
         fontFamily: "'Raleway', sans-serif",
         fontSize: '.8rem',
@@ -37,8 +41,9 @@ const useStyles = makeStyles({
 });
 
 
-/* ({Receiving props}) */
+/* const inside bracket({Receiving props}) */
 const FilterListToggle = ({ options, value, selectToggle }) => {
+    
     const classes = useStyles()
     return (
 
@@ -46,6 +51,7 @@ const FilterListToggle = ({ options, value, selectToggle }) => {
             value={value}
             onChange={selectToggle}
             className={classes.root}
+            exclusive
         >
             {options.map(({ label, id, value }) =>
             (<ToggleButton className={classes.toggle} key={id} value={value}>

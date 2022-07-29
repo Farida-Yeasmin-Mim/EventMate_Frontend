@@ -1,6 +1,5 @@
 //import logo from './logo.svg';
 import './App.css';
-import './components/event/filter/Home.css'; 
 import Login from './pages/auth/Login';
 import Signup from './pages/auth/Signup';
 import Registration from './components/vendor/RegVendor';
