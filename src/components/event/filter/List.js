@@ -1,5 +1,5 @@
 import React from 'react'
-import DecorationCard from '../../cards/decoration';
+import DecorationCard from '../../cards/Decoration';
 import '../../event/filter/List.css';
 // import ListItem from './ListItem';
 

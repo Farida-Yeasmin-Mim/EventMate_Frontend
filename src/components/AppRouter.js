@@ -17,6 +17,7 @@ import AddDecorationsForm from '../pages/services/addDecorationsForm';
 import FilterPage from './event/filter/FilterPage';
 
 
+
 function AppRouter(props) {
     return (
         <Router>
@@ -32,13 +33,12 @@ function AppRouter(props) {
                 <Route path="/vendor_dashboard" element={<Dashboard/>} />
                 <Route path="/event_create" element={<CreateEvent/>} />
                 <Route path="/productcategories" element={<ProductCategories/>} /> 
-                {/* <Route path="/select_services" element={<SelectServices/>} /> */}
-                <Route path="/select_services" element={<FilterPage/>} />
+                <Route path="/select_services" element={<SelectServices/>} />
                 <Route path="/Order_details" element={<OrderDetails/>} />
                 <Route path="/Offer" element={<Offer/>} />
                 <Route path="/addDecorationsForm" element={<AddDecorationsForm/>} />
-                    
-                
+                <Route path="/filterPage" element={<FilterPage/>} />
+                                    
                 {/* path="file name" element="file function" */}
 
                 

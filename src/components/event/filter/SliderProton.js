@@ -2,6 +2,7 @@ import React from 'react'
 import { Slider } from '@mui/material'
 import { makeStyles } from '@mui/styles';
 
+/*create useStyles method by the help of makestyles*/
 const useStyles= makeStyles({
     root:{
         width:'100%',
@@ -31,9 +32,9 @@ const SliderProton = ({value, changePrice}) => {
         max={5000}
         classes={
             {
-                thumb:classes.thumb,
-                rail:classes.rail,
-                track:classes.track,
+                thumb:classes.thumb, /*line circle*/
+                rail:classes.rail,  /*pricing rail line*/
+                track:classes.track, /*pricing rail active part*/
             }
         }
         />

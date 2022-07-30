@@ -6,7 +6,6 @@ export const categoryList = [
       label: '🚩 decoration',
     }, 
     
-
     {
       id: 2,
       value: 'catering',

@@ -8,7 +8,6 @@ import {Button} from '@mui/material';
 import { Link as RLink } from "react-router-dom";
 
 
-
 //imagebackdrop giving all the images a hover color
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -130,6 +129,8 @@ const images = [
 export default function ProductCategories() {
   return (
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
+      
+      {/* Typography used to standardize the text */}
       <Typography variant="h3" align="center">
         Choose Your Categories
       </Typography>

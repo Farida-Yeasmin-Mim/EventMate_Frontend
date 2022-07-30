@@ -10,8 +10,6 @@ import PostRequest from '../../components/PostRequest';
 import { render } from '@testing-library/react';
 
 
-
-
 const Login = () => {
     const avatarStyle = { backgroundColor: '#72b972' }
     const paperStyle = { padding: 30, height: '75vh', width: 280, margin: '20px auto' }  //creating paperstyle variable by using const
