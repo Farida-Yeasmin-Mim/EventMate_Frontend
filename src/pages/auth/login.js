@@ -108,6 +108,7 @@ const Login = () => {
                 <br/>
                 <br/>
                
+                {/* Typography used to standardize the text */}
                 <Typography textAlign= 'center'>
                     <Link href="#">Forgot Password</Link>
                 </Typography>

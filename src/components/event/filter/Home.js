@@ -17,18 +17,23 @@ const Home = () => {
     {
       id: 1,
       checked: false,
-      label: 'color',
+      label: 'Color',
     },
     {
       id: 2,
       checked: false,
-      label: 'theme',
+      label: 'Theme',
     },
     {
       id: 3,
       checked: false,
-      label: 'flower',
-    }
+      label: 'Flower',
+    },
+    {
+      id: 4,
+      checked: false,
+      label: 'Lighting',
+    },
 
   ])
 
@@ -61,7 +66,7 @@ const Home = () => {
       {/* Search Bar */}
       <SearchBar />
 
-
+      
       <div className="home_panelList-wrap">
         <div className="home_panel-wrap">
           {/* Filter Panel */}
@@ -75,8 +80,8 @@ const Home = () => {
             selectedPrice={selectedPrice}
             changePrice={handleChangePrice}
           />
-
         </div>
+
 
 
         <div className="home_list-wrap">

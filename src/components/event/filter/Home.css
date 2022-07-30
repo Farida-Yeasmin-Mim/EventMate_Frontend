@@ -1,6 +1,6 @@
 .home {
-    /* display: flex; */
-    /* flex-direction: coloumn;
+    /* display: flex; 
+    flex-direction: coloumn;
     height: 100vh; */
     
     }
@@ -23,10 +23,10 @@
   
   .home_panel-wrap{
   flex-basis: 280px;
-  padding: 1rem;
+  padding: 2rem;
   }
     
   .home_list-wrap{
     flex: 1;
-    padding: 1rem;
+    padding: 3rem;
   } 

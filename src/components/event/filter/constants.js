@@ -1,9 +1,12 @@
+// For Category List
 export const categoryList = [
     {
       id: 1,
-      value: 'decoration',
+      value: ' decoration',
       label: '🚩 decoration',
-    },
+    }, 
+    
+
     {
       id: 2,
       value: 'catering',
@@ -11,6 +14,7 @@ export const categoryList = [
     },
   ];
   
+  // For Rating List
   export const ratingList = [
     {
       id: 1,
@@ -39,6 +43,7 @@ export const categoryList = [
     },
   ];
   
+  // For Data List
   export const dataList = [
     {
       id: 1,

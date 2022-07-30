@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 //import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import DecorationCard from '../cards/decoration';
+import DecorationCard from '../cards/Decoration';
 import {Button} from '@mui/material';
 import { Link as RLink } from "react-router-dom";
  

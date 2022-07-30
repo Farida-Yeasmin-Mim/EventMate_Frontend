@@ -1,12 +1,12 @@
 .label, .label-range{
     margin-bottom: 0.8rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .input-group{
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .label-range{
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }

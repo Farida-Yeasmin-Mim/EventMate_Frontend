@@ -23,22 +23,78 @@ const AddDecorationsForm = () => {
                 </Grid> <br/>
 
 
-                <TextField id='standard-basic' label='Service Name' variant='standard' fullWidth/><br/><br/>
-                <TextField id='standard-basic' label='Location' variant='standard' fullWidth  /><br/><br/>
-                <TextField id='standard-basic' label='Contact No.' variant='standard' type='contact' fullWidth /><br/><br/>
-                <TextField id='standard-basic' label='Max Guest No.' variant='standard' fullWidth/><br/><br/>
-                <TextField id='standard-basic' label='Required Space' variant='standard' fullWidth /><br/><br/>
-                <TextField id='standard-basic' label='Price' variant='standard' fullWidth/><br/><br/>
-                <TextField id='standard-basic' label='Inform Time' variant='standard' fullWidth/><br/><br/>
-                <TextField id='standard-basic' label='Build Time' variant='standard' fullWidth /><br/><br/>
-                <TextField id='standard-basic' label='Offered Colour' variant='standard' fullWidth/><br/><br/>
+                <TextField 
+                id='standard-basic' 
+                label='Service Name' 
+                variant='standard' 
+                fullWidth
+                /><br/><br/>
+
+                <TextField 
+                id='standard-basic' 
+                label='Location' 
+                variant='standard' 
+                fullWidth 
+                /><br/><br/>
+                
+                <TextField 
+                id='standard-basic' 
+                label='Contact No.' 
+                variant='standard' 
+                type='contact' 
+                fullWidth 
+                /><br/><br/>
+
+                <TextField 
+                id='standard-basic' 
+                label='Max Guest No.' 
+                variant='standard' 
+                fullWidth
+                /><br/><br/>
+
+                <TextField 
+                id='standard-basic' 
+                label='Required Space' 
+                variant='standard' 
+                fullWidth 
+                /><br/><br/>
+
+                <TextField 
+                id='standard-basic' 
+                label='Price' 
+                variant='standard' 
+                fullWidth
+                /><br/><br/>
+                
+                <TextField 
+                id='standard-basic' 
+                label='Inform Time' 
+                variant='standard' 
+                fullWidth
+                /><br/><br/>
+
+                <TextField 
+                id='standard-basic' 
+                label='Build Time' 
+                variant='standard' 
+                fullWidth 
+                /><br/><br/>
+                
+                <TextField 
+                id='standard-basic' 
+                label='Offered Colour' 
+                variant='standard' 
+                fullWidth
+                /><br/><br/>
+                
                 <SelectAreas/><br/>
-                <TextField id='standard-basic' label='Password' variant='standard' type='password' fullWidth />
                 
-
-
-
-                
+                <TextField 
+                id='standard-basic' 
+                label='Password' 
+                variant='standard' 
+                type='password' 
+                fullWidth />
                 
 
                 <br />

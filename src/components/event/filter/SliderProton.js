@@ -18,14 +18,14 @@ const useStyles= makeStyles({
 
 });
 
-const SliderProton = ({value, changedPrice}) => {
+const SliderProton = ({value, changePrice}) => {
  const classes= useStyles();
   
     return (
     <div className={classes.root}>
         <Slider
         value={value}
-        onChange={changedPrice}
+        onChange={changePrice}
         valueLabelDisplay="on"
         min={1000}
         max={5000}

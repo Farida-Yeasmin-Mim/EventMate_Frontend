@@ -1,8 +1,9 @@
-import { Checkbox, FormControlLabel } from '@mui/material'
+import { Checkbox, FormControlLabel} from '@mui/material'
+import { makeStyles } from '@mui/styles'
 import React from 'react'
-import { makeStyles } from '@mui/styles';
 
-// create useStyles method
+
+/*creating useStyles method*/
 const useStyles = makeStyles({
     root: {
         '&$checked': {
@@ -38,7 +39,7 @@ const CheckboxProton = ({ decoration, changeChecked }) => {
                     root: classes.wrap
 
                 }}
-                // rander checkbox using control
+                /* Rander checkbox using control*/
                 control={
                     <Checkbox classes={{
                         checked: classes.checked,
@@ -54,9 +55,6 @@ const CheckboxProton = ({ decoration, changeChecked }) => {
 
                 label={label}
             />
-
-
-
 
         </div>
     )

@@ -16,11 +16,8 @@ import Dashboard from './components/vendor/Dashboard';
 import CreateEvent from './components/event/CreateEvent';
 import OrderDetails from './components/event/OrderDetails';
 import AppRouter from './components/AppRouter';
-import Notification from './components/Notification';
-
 import Home from './components/event/filter/Home';
 import SearchBar from './components/event/filter/SearchBar';
-import FilterPanel from './components/event/filter/FilterPanel';
 
 
 
@@ -30,7 +27,7 @@ function App() {
 
       {/* 
       
-      <IconTabs></IconTabs>
+      
 
       <Services></Services>
       <Offer></Offer>
@@ -44,23 +41,23 @@ function App() {
 
       {/* <DecorationCard></DecorationCard>  */}
       {/* <ProductCategories></ProductCategories> */}
-    {/* <Navbar/>   */}
-    {/* <Home/> */}
-    {/* <Feed/> */}
-    {/* <Dashboard/> */}
-    {/* <CreateEvent/> */}
-    {/* <OrderDetails/> */}
+      {/* <Navbar/>   */}
+      {/* <Home/> */}
+      {/* <Feed/> */}
+      {/* <Dashboard/> */}
+      {/* <CreateEvent/> */}
+      {/* <OrderDetails/> */}
       
-      <Home/>
 
       {/* <SearchBar/> */}
+
+
       
+      <AppRouter />
+      {/* <Home/> */}
+      {/* <IconTabs/> */}
 
-      {/* <Notification/>
-      <AppRouter/> */}
-
-
-    {/* <h1>hello</h1> */}
+    
     </div>
   );
 }
