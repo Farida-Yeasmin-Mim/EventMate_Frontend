@@ -18,9 +18,9 @@ const Signup = () => {
 
     const [name, setName] = useState(" ");
     const [email, setEmail] = useState(" ");
-    const [address, setAddress] = useState(" ");
-    const [doB, setDoB] = useState(" ");
-    const [contact, setContact] = useState(" ");
+    const [location, setLocation] = useState(" ");
+    const [dob, setDob] = useState(" ");
+    const [phone, setPhone] = useState(" ");
     const [nid, setNid] = useState(" ");
     const [gender, setGender] = useState(" ");
     const [password, setPassword] = useState(" ");
@@ -35,9 +35,9 @@ const Signup = () => {
         let item = {
             name: name,
             email: email,
-            address: address,
-            doB: doB,
-            contact: contact,
+            location: location,
+            dob: dob,
+            phone: phone,
             nid: nid,
             gender: gender,
             password: password,
@@ -47,15 +47,13 @@ const Signup = () => {
             .then((response) => {
                 setResult(response.data)
                 console.log(result.data);
-                navigate('/'); 
+                navigate('/');
             })
             .catch(error => {
                 //this.setResult({ errorMessage: error.message });
                 console.error('There was an error!', error);
             });
     }
-
-
 
 
     return (
@@ -74,7 +72,7 @@ const Signup = () => {
                     variant='standard'
                     fullWidth
                     required
-                    onChange={(e)=>setName(e.target.value)}
+                    onChange={(e) => setName(e.target.value)}
                 /><br /><br />
 
 
@@ -84,45 +82,45 @@ const Signup = () => {
                     name="email"
                     variant='standard'
                     fullWidth
-                    required 
-                    onChange={(e)=>setEmail(e.target.value)}
-                    /><br /><br />
+                    required
+                    onChange={(e) => setEmail(e.target.value)}
+                /><br /><br />
 
                 <TextField
-                    id='address'
-                    label='Address'
-                    name="address"
+                    id='location'
+                    label='Location'
+                    name="location"
                     variant='standard'
                     fullWidth
-                    onChange={(e)=>setAddress(e.target.value)}
-                    /><br /><br />
+                    onChange={(e) => setLocation(e.target.value)}
+                /><br /><br />
 
                 <TextField
-                    id='doB'
+                    id='dob'
                     label='Date of Birth'
-                    name="doB"
-                    variant='standard'
-                    fullWidth 
-                    onChange={(e)=>setDoB(e.target.value)}
-                    /><br /><br />
-
-                <TextField
-                    id='contact'
-                    label='Contact No.'
-                    name="contact"
+                    name="dob"
                     variant='standard'
                     fullWidth
-                    onChange={(e)=>setContact(e.target.value)}
-                    /><br /><br />
+                    onChange={(e) => setDob(e.target.value)}
+                /><br /><br />
+
+                <TextField
+                    id='phone'
+                    label='Contact No.'
+                    name="phone"
+                    variant='standard'
+                    fullWidth
+                    onChange={(e) => setPhone(e.target.value)}
+                /><br /><br />
 
                 <TextField
                     id='nid'
                     label='NID No.'
                     name="nid"
                     variant='standard'
-                    fullWidth 
-                    onChange={(e)=>setNid(e.target.value)}
-                    /><br /><br />
+                    fullWidth
+                    onChange={(e) => setNid(e.target.value)}
+                /><br /><br />
 
                 <SelectGender />
 
@@ -133,9 +131,9 @@ const Signup = () => {
                     variant='standard'
                     type='password'
                     fullWidth
-                    required 
-                    onChange={(e)=>setPassword(e.target.value)}
-                    /><br /><br />
+                    required
+                    onChange={(e) => setPassword(e.target.value)}
+                /><br /><br />
 
                 <TextField
                     id='confirmpassword'
@@ -144,8 +142,8 @@ const Signup = () => {
                     variant='standard'
                     type='password'
                     fullWidth
-                    required 
-                    onChange={(e)=>setConfirmPassword(e.target.value)} />
+                    required
+                    onChange={(e) => setConfirmPassword(e.target.value)} />
 
 
                 <br />
