@@ -37,7 +37,7 @@ function AppRouter(props) {
                 <Route path="/Order_details" element={<OrderDetails/>} />
                 <Route path="/Offer" element={<Offer/>} />
                 <Route path="/addDecorationsForm" element={<AddDecorationsForm/>} />
-                <Route path="/filterPage" element={<FilterPage/>} />
+                <Route path="/filterpage" element={<FilterPage/>} />
                                     
                 {/* path="file name" element="file function" */}
 

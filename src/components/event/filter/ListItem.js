@@ -1,11 +1,14 @@
 import React from 'react';
 import '../../event/filter/ListItem.css';
 
-const ListItem = ({
+
+const ListItem = ({ 
   item: { coverSrc, title, price, deliveryFee, serviceTime, rating },
 }) => (
   <div className="listItem-wrap">
-    <img src={coverSrc} alt="item" />
+    {/* <img src={coverSrc} alt="item" /> */}
+    <img src={require(coverSrc)} alt="item" />
+
     
     <header>
       <h4>{title}</h4>

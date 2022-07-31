@@ -1,9 +1,12 @@
+import nacho from "./images/dishes/nacho-burger.jpg";
+import temp from "./images/dishes/temp";
+
 // For Category List
 export const categoryList = [
     {
       id: 1,
       value: ' decoration',
-      label: '🚩 decoration',
+      label: '💫 decoration',
     }, 
     
     {
@@ -44,6 +47,8 @@ export const categoryList = [
   
   // For Data List
   export const dataList = [
+    
+    /*For Decoration*/
     {
       id: 1,
       title: 'lounge resort',
@@ -53,7 +58,7 @@ export const categoryList = [
       cuisine: 'american',
       rating: 5,
       price: 2500,
-      coverSrc: '/images/places/ameri.jpg',
+      coverSrc: nacho,
     },
     {
       id: 2,
@@ -110,6 +115,8 @@ export const categoryList = [
       price: 3500,
       coverSrc: '/images/places/fookyew2.jpg',
     },
+    
+    /*For Catering*/
     {
       id: 7,
       title: 'Nacho cheeseburger',
@@ -119,7 +126,8 @@ export const categoryList = [
       cuisine: 'american',
       rating: 2,
       price: 2200,
-      coverSrc: '/images/dishes/nacho-burger.jpg',
+      coverSrc: './images/dishes/nacho-burger.jpg',
+      // /images/dishes/nacho-burger.jpg 
     },
     {
       id: 8,
