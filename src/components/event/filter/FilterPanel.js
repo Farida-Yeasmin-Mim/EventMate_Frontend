@@ -9,10 +9,13 @@ import SliderProton from './SliderProton';
 const FilterPanel = ({
   selectedCategory,
   selectToggle,
+
   selectedRating,
   selectRating,
-  decoration,
+
+  decorations,
   changeChecked,
+  
   changePrice,
   selectedPrice,
 }) => {
@@ -34,7 +37,7 @@ const FilterPanel = ({
       {/* Decoration */}
       <div className="input-group">
         <p className="label"> Decoration</p>
-        {decoration.map((decoration) => (
+        {decorations.map((decoration) => (
           <CheckboxProton
             key={decoration.id}
             decoration={decoration}

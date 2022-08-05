@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 
 const CheckboxProton = ({ decoration, changeChecked }) => {
     const classes = useStyles()
-    const { value, label, id } = decoration;
+    const { checked, label, id } = decoration;
 
     return (
         <div>
@@ -47,8 +47,9 @@ const CheckboxProton = ({ decoration, changeChecked }) => {
                     }}
 
                         size="small"
-                        // checked={checked}
+                        checked={checked}
                         onChange={() => changeChecked(id)}
+                        inputProps={{ 'aria-label': 'checkbox with small size' }}
                     />
 
                 }
@@ -57,7 +58,7 @@ const CheckboxProton = ({ decoration, changeChecked }) => {
             />
 
         </div>
-    )
-}
+    );
+};
 
-export default CheckboxProton
+export default CheckboxProton;

@@ -15,7 +15,7 @@ const FilterPage = () => {
   const [searchInput, setSearchInput] = useState('');
   const [resultsFound, setResultsFound] = useState(true);
 
-  const [decoration, setdecoration] = useState([
+  const [decorations, setDecorations] = useState([
 
     {
       id: 1,
@@ -37,22 +37,25 @@ const FilterPage = () => {
 
   
   // Category
-  // check if value present or not, if null then receive the value of selectedCategory
+  // check if value is present or not, if null then receive the value of selectedCategory
   const handleSelectCategory = (event, value) =>
     !value ? null : setSelectedCategory(value);
+
 
   // Rating
   const handleSelectRating = (event, value) =>
     !value ? null : setSelectedRating(value);
 
+
   // Decoration
-  const handlechangeChecked = id => {
-    const decorationStateList = decoration;
-    const changeCheckedDecoration = decorationStateList.map((item) =>
+  const handleChangeChecked = (id) => {
+    const decorationsStateList = decorations;
+    const changeCheckedDecorations = decorationsStateList.map((item) =>
       item.id === id ? { ...item, checked: !item.checked } : item);
 
-    setdecoration(changeCheckedDecoration);
+    setDecorations(changeCheckedDecorations);
   }
+
 
   // price
   const handleChangePrice = (event, value) =>
@@ -60,6 +63,7 @@ const FilterPage = () => {
 
 
   
+
     //For all filters
   const applyFilters = () => {
     let updatedList = dataList;  /*updatedList variable is assigned with dataList value where all items are present*/
@@ -72,6 +76,7 @@ const FilterPage = () => {
       );
     }
 
+    
     // Category Filter
     if (selectedCategory) {
       updatedList = updatedList.filter(
@@ -81,13 +86,13 @@ const FilterPage = () => {
 
 
     // Decoration Filter
-    const decorationChecked = decoration
+    const decorationsChecked = decorations
       .filter((item) => item.checked)
       .map((item) => item.label.toLowerCase());
 
-    if (decorationChecked.length) {
+    if (decorationsChecked.length) {
       updatedList = updatedList.filter((item) =>
-        decorationChecked.includes(item.decoration)
+        decorationsChecked.includes(item.decoration)
       );
     }
 
@@ -120,7 +125,7 @@ const FilterPage = () => {
 
   useEffect(() => {
     applyFilters();
-  }, [selectedRating, selectedCategory, decoration, selectedPrice, searchInput]);
+  }, [selectedRating, selectedCategory, decorations, selectedPrice, searchInput]);
 
 
 
@@ -133,18 +138,26 @@ const FilterPage = () => {
       />
 
 
+       {/* Filter Panel */}
       <div className="home_panelList-wrap">
         <div className="home_panel-wrap">
-          {/* Filter Panel */}
           <FilterPanel
-            selectToggle={handleSelectCategory}
+            
+            // Category
+            selectToggle={handleSelectCategory} 
             selectedCategory={selectedCategory}
-            selectRating={handleSelectRating}
-            selectedRating={selectedRating}
-            decoration={decoration}
-            changeChecked={handlechangeChecked}
-            selectedPrice={selectedPrice}
+            
+            // Decoration
+            decorations={decorations}
+            changeChecked={handleChangeChecked}
+            
+            // Price Range
             changePrice={handleChangePrice}
+            selectedPrice={selectedPrice}
+            
+            // Star Rating
+            selectRating={handleSelectRating}
+            selectedRating={selectedRating}            
           />
 
         </div>
