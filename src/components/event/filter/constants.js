@@ -1,5 +1,5 @@
 import nacho from "./images/dishes/nacho-burger.jpg";
-import temp from "./images/dishes/temp";
+
 
 // For Category List
 export const categoryList = [
@@ -45,7 +45,8 @@ export const categoryList = [
     },
   ];
   
-  // For Data List
+  
+  // For side List
   export const dataList = [
     
     /*For Decoration*/
