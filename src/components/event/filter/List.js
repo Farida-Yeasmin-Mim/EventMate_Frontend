@@ -1,8 +1,7 @@
 import React from 'react'
 //import DecorationCard from '../../cards/Decoration';
-import '../../event/filter/List.css';
 import ListItem from './ListItem';
-
+import '../../event/filter/List.css';
 
 
 const List = ({ list }) => {

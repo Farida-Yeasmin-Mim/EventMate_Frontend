@@ -20,21 +20,22 @@ const FilterPage = () => {
     {
       id: 1,
       checked: false,
-      label: 'color',
+      label: 'Wedding',
     },
     {
       id: 2,
       checked: false,
-      label: 'theme',
+      label: 'Birthday',
     },
     {
       id: 3,
       checked: false,
-      label: 'flower',
+      label: 'Proposal',
     }
 
   ])
 
+  
   // Category
   // check if value present or not, if null then receive the value of selectedCategory
   const handleSelectCategory = (event, value) =>
@@ -58,7 +59,8 @@ const FilterPage = () => {
     setSelectedPrice(value);
 
 
-  //For all filters
+  
+    //For all filters
   const applyFilters = () => {
     let updatedList = dataList;  /*updatedList variable is assigned with dataList value where all items are present*/
 
