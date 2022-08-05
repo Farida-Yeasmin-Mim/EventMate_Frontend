@@ -121,10 +121,11 @@ const FilterPage = () => {
   }, [selectedRating, selectedCategory, decoration, selectedPrice, searchInput]);
 
 
+
   return (
 
+    /*Search Bar*/
     <div className="home">
-      {/* Search Bar */}
       <SearchBar value={searchInput}
         changeInput={(e) => setSearchInput(e.target.value)}
       />
@@ -150,7 +151,7 @@ const FilterPage = () => {
 
         {/* List & Empty view*/}
         <div className="home_list-wrap">
-          {setResultsFound ? <List list={list} /> : <EmptyView />}
+          {resultsFound ? <List list={list} /> : <EmptyView />}
         </div>
 
 
