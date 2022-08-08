@@ -74,7 +74,7 @@ export const categoryList = [
     },
     {
       id: 3,
-      title: 'chow',
+      title: 'Proposal Decoration 1',
       serviceTime: '30-22min',
       deliveryFee: 4.94,
       category: 'decoration',
@@ -85,7 +85,7 @@ export const categoryList = [
     },
     {
       id: 4,
-      title: 'wharf seafood',
+      title: 'Wedding Decoration 2',
       serviceTime: '10-18min',
       deliveryFee: 2.14,
       category: 'decoration',
@@ -96,7 +96,7 @@ export const categoryList = [
     },
     {
       id: 5,
-      title: 'Tossin',
+      title: 'Birthday Decoration 2',
       serviceTime: '25-30min',
       deliveryFee: 6.79,
       category: 'decoration',
@@ -107,7 +107,7 @@ export const categoryList = [
     },
     {
       id: 6,
-      title: 'stories noodles',
+      title: 'Proposal Decoration 2',
       serviceTime: '5-15min',
       deliveryFee: 2.87,
       category: 'decoration',

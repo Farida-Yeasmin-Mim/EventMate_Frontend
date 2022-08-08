@@ -39,6 +39,7 @@ const CheckboxProton = ({ decoration, changeChecked }) => {
                     root: classes.wrap
 
                 }}
+                
                 /* Rander checkbox using control*/
                 control={
                     <Checkbox classes={{
