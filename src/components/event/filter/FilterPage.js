@@ -10,7 +10,7 @@ import { dataList } from './constants';
 const FilterPage = () => {
   const [selectedCategory, setSelectedCategory] = useState(null); /* create and set the variable using useState*/
   const [selectedRating, setSelectedRating] = useState(null);
-  const [selectedPrice, setSelectedPrice] = useState([1000, 5000]);
+  const [selectedPrice, setSelectedPrice] = useState([2000, 50000]);
   const [list, setList] = useState(dataList);   /* dataList is defined in constants.js */
   const [searchInput, setSearchInput] = useState('');
   const [resultsFound, setResultsFound] = useState(true);

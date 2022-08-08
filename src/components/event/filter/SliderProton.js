@@ -28,8 +28,8 @@ const SliderProton = ({value, changePrice}) => {
         value={value}
         onChange={changePrice}
         valueLabelDisplay="on"
-        min={1000}
-        max={5000}
+        min={2000}
+        max={50000}
         classes={
             {
                 thumb:classes.thumb, /*line circle*/

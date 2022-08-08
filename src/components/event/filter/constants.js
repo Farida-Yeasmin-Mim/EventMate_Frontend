@@ -58,7 +58,7 @@ export const categoryList = [
       category: 'decoration',
       decoration: 'Wedding',
       rating: 5,
-      price: 2500,
+      price: 14500,
       coverSrc: nacho,
     },
     {
@@ -69,7 +69,7 @@ export const categoryList = [
       category: 'decoration',
       decoration: 'Birthday',
       rating: 4,
-      price: 1000,
+      price: 8500,
       coverSrc: 'https://m.media-amazon.com/images/I/81nU6clDgEL.jpg',
     },
     {
@@ -80,7 +80,7 @@ export const categoryList = [
       category: 'decoration',
       decoration: 'Proposal',
       rating: 3,
-      price: 2000,
+      price: 5000,
       coverSrc: 'https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg?w=2000',
     },
     {
@@ -91,7 +91,7 @@ export const categoryList = [
       category: 'decoration',
       decoration: 'Wedding',
       rating: 1,
-      price: 1800,
+      price: 40000,
       coverSrc: '/images/places/sea.jpg',
     },
     {
@@ -102,7 +102,7 @@ export const categoryList = [
       category: 'decoration',
       decoration: 'Proposal',
       rating: 5,
-      price: 2000,
+      price: 9000,
       coverSrc: '/images/places/italiian.jpg',
     },
     {
@@ -113,7 +113,7 @@ export const categoryList = [
       category: 'decoration',
       decoration: 'Birthday',
       rating: 5,
-      price: 3500,
+      price: 6000,
       coverSrc: '/images/places/fookyew2.jpg',
     },
     
@@ -132,13 +132,13 @@ export const categoryList = [
     },
     {
       id: 8,
-      title: 'Mushroom Risotto',
+      title: 'Meaty Onion Pizza',
       serviceTime: '10-15min',
       deliveryFee: 1.8,
       category: 'catering',
       decoration: 'italian',
       rating: 1,
-      price: 1900,
+      price: 3000,
       coverSrc: '/images/dishes/Mushroom-Risotto-Recipe-1-1200.jpg',
     },
     {
@@ -165,7 +165,7 @@ export const categoryList = [
     },
     {
       id: 11,
-      title: 'Bruschetta',
+      title: 'Kacchi Biriyani',
       serviceTime: '16-20min',
       deliveryFee: 4.1,
       category: 'catering',

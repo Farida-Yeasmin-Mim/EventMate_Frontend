@@ -23,8 +23,8 @@ const ListItem = ({
 
     {/* Footer */}
     <footer>
-      <p><b>{serviceTime}</b> <span> Delivery Fee ${deliveryFee}</span></p>
-      <p><b>${price}</b></p>
+      <p><b>{serviceTime}</b> <span> Delivery Fee ৳{deliveryFee}</span></p>
+      <p><b>৳{price}</b></p>
     </footer>
     
   </div>
