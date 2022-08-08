@@ -10,6 +10,8 @@ const List = ({ list }) => {
       {list.map((item) => (
         <ListItem key={item.id} item={item} />
       ))}
+      <h1 className='h1cls'>Hello</h1>
+
     </div>
   )
 }

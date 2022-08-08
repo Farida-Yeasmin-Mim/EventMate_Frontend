@@ -5,7 +5,7 @@ import nacho from "./images/dishes/nacho-burger.jpg";
 export const categoryList = [
     {
       id: 1,
-      value: 'decoration',
+      value: ' decoration',
       label: '💫 Decoration',
     }, 
     

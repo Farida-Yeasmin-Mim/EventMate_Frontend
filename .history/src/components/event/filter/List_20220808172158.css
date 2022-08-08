@@ -1,11 +1,8 @@
 .list-wrap {
+  background: black;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* 3 column & 1 row with equal spaces */
   grid-gap: 2rem;
   /* gap from coloum and row*/
-}
-
-.h1cls {
-  color: green;
 }

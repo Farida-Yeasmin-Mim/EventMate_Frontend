@@ -56,7 +56,7 @@ export const categoryList = [
       serviceTime: '7 days',
       deliveryFee: 3.44,
       category: 'decoration',
-      decoration: 'Wedding',
+      decoration: 1,
       rating: 5,
       price: 2500,
       coverSrc: nacho,
