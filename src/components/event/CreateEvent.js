@@ -24,7 +24,7 @@ const CreateEvent = () => {
     const navigate = useNavigate();
 
 
-    async function services() {
+    async function event() {
         // console.warn(username, password)
         let item = {
             date: date,
@@ -37,7 +37,7 @@ const CreateEvent = () => {
 
         /* axios package is used to send the request from frontend to backend in react */ 
         /* post is used to send the data from from frontend to backend*/ 
-        axios.post('services', item)          /* ('services'= 'url' , item= the data we want to send)  */ 
+        axios.post('event', item)          /* ('services'= 'url' , item= the data we want to send)  */ 
          
 /*if post api can successfully send data, it will enter to '.then'(.then come from backend) or if not then '.catch' */   
         .then((response) => {           /* "response" is send from backend */           
@@ -120,8 +120,8 @@ const CreateEvent = () => {
                     label="I have checked everything clearly"
                 />
 
-                {/* <Button type='submit' variant="contained" style={btnStyle} fullWidth>Submit</Button> */}
-                <RLink to="/productcategories" style={{ textDecoration: 'none' }}><Button variant="contained">Submit</Button></RLink>
+                <Button onClick={event} type='submit' variant="contained" style={btnStyle} fullWidth>Submit</Button>
+                {/* <RLink to="/productcategories" style={{ textDecoration: 'none' }}><Button variant="contained">Submit</Button></RLink> */}
 
             </Paper>
         </Grid>
