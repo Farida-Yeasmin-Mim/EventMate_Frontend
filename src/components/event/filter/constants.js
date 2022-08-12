@@ -59,7 +59,7 @@ export const categoryList = [
       decoration: 'Wedding',
       rating: 5,
       price: 14500,
-      coverSrc: 'https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/05/daytime-wedding-decoration-ideas.jpg',
+      coverSrc: 'https://i.pinimg.com/originals/1e/3e/9c/1e3e9c0f92b0ec4aa574f8664129023f.jpg',
     },
     {
       id: 2,
@@ -81,7 +81,7 @@ export const categoryList = [
       decoration: 'Proposal',
       rating: 3,
       price: 5000,
-      coverSrc: 'https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg?w=2000',
+      coverSrc: 'https://i.pinimg.com/736x/b1/75/5b/b1755b280c2c8a1b6a500de9d60988c9.jpg',
     },
     {
       id: 4,
@@ -92,7 +92,7 @@ export const categoryList = [
       decoration: 'Wedding',
       rating: 1,
       price: 40000,
-      coverSrc: '/images/places/sea.jpg',
+      coverSrc: 'https://cdn.shaadiwish.com/img/cat/destination-weddings.jpg',
     },
     {
       id: 5,
@@ -103,7 +103,7 @@ export const categoryList = [
       decoration: 'Proposal',
       rating: 5,
       price: 9000,
-      coverSrc: '/images/places/italiian.jpg',
+      coverSrc: 'https://www.fnp.com/images/pr/l/v20210623021345/birthday-balloon-decor-for-husband_1.jpg',
     },
     {
       id: 6,
@@ -114,7 +114,7 @@ export const categoryList = [
       decoration: 'Birthday',
       rating: 5,
       price: 6000,
-      coverSrc: '/images/places/fookyew2.jpg',
+      coverSrc: 'https://ae01.alicdn.com/kf/S6a00dffb5f3a44fea4dfe9111fc3e1c1R/Wedding-decoration-proposal-props-romantic-scene-layout-confession-room-interior-bag-decoration-Valentine-s-day-party.jpg_Q90.jpg_.webp',
     },
     
     /*For Catering*/
