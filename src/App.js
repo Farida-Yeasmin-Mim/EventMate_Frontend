@@ -61,7 +61,7 @@ function App() {
       {/* <Home/>  */}
      {/* <FilterPage/> */}
 
-<h1>i am mim</h1>
+
      
     </div>
   );
