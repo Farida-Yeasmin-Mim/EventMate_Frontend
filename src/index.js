@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
-import Context from './components/context/Context';
+// import Context from './components/context/Context';
 
 axios.defaults.baseURL = 'http://127.0.0.1:8000/api/'
 // axios.defaults.baseURL = 'https://guarded-beach-16980.herokuapp.com/api/'
@@ -17,7 +17,7 @@ root.render(
       <App />
     </Context> */}
   <App/>
-  {/* <h1>heeeeeeeeeeeeeeee</h1> */}
+
   </React.StrictMode>
   
 );

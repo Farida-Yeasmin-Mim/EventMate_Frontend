@@ -127,8 +127,7 @@ export const categoryList = [
       decoration: 'american',
       rating: 2,
       price: 2200,
-      coverSrc: '../filter/images/dishes/nacho-burger.jpg',
-      // /images/dishes/nacho-burger.jpg 
+      coverSrc: 'https://hips.hearstapps.com/del.h-cdn.co/assets/15/24/1434152569-burgers-01.jpg',
     },
     {
       id: 8,
@@ -139,7 +138,7 @@ export const categoryList = [
       decoration: 'italian',
       rating: 1,
       price: 3000,
-      coverSrc: '/images/dishes/Mushroom-Risotto-Recipe-1-1200.jpg',
+      coverSrc: 'https://1.bp.blogspot.com/-2kLcfQgYOLM/XxDWSlTU1QI/AAAAAAAAQvA/JAFvJPigvXgogs6JlwyBF947oG-mOVeJACLcBGAsYHQ/s1600/FB_IMG_1594938803659.jpg',
     },
     {
       id: 9,
@@ -150,7 +149,7 @@ export const categoryList = [
       decoration: 'chinese',
       rating: 4,
       price: 2750,
-      coverSrc: '/images/dishes/shiitake-salmon-fried-rice-0218-103230720.jpg',
+      coverSrc: 'https://static01.nyt.com/images/2011/11/08/health/well_veggie_stir/well_veggie_stir-articleLarge.jpg',
     },
     {
       id: 10,
@@ -161,7 +160,7 @@ export const categoryList = [
       decoration: 'american',
       rating: 2,
       price: 4350,
-      coverSrc: '/images/dishes/pesto-chicken.jpg',
+      coverSrc: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1085527_11-ad12e39.jpg',
     },
     {
       id: 11,
@@ -172,7 +171,7 @@ export const categoryList = [
       decoration: 'italian',
       rating: 3,
       price: 3300,
-      coverSrc: '/images/dishes/as-tomato-bruschetta-articleLarge.jpg',
+      coverSrc: 'https://www.dhakafoodster.com/wp-content/uploads/2021/06/Sultan%E2%80%99s-Diner-Mirpur-Kacchi-Biriyani-1.jpg',
     },
     {
       id: 12,
@@ -183,6 +182,6 @@ export const categoryList = [
       decoration: 'chinese',
       rating: 2,
       price: 4100,
-      coverSrc: '/images/dishes/dimsums.jpg',
+      coverSrc: 'https://images.lifestyleasia.com/wp-content/uploads/sites/7/2019/09/01125635/262395678_315575290204310_5488398172545455237_n-806x806.jpg',
     },
   ];   
