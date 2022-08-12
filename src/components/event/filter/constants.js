@@ -1,4 +1,4 @@
-import nacho from "./images/dishes/nacho-burger.jpg";
+// import nacho from "./images/dishes/nacho-burger.jpg";
 
 
 // For Category List
@@ -59,7 +59,7 @@ export const categoryList = [
       decoration: 'Wedding',
       rating: 5,
       price: 14500,
-      coverSrc: nacho,
+      coverSrc: 'https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/05/daytime-wedding-decoration-ideas.jpg',
     },
     {
       id: 2,
