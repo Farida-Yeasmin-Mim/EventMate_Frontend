@@ -4,7 +4,7 @@ import BookIcon from '@mui/icons-material/Book';
 import PostAddSharpIcon from '@mui/icons-material/PostAddSharp';
 import NotificationsActiveSharpIcon from '@mui/icons-material/NotificationsActiveSharp';
 import ExitToAppSharpIcon from '@mui/icons-material/ExitToAppSharp';
-import { useStyles } from "./HeaderStyles";
+import { useStyles } from "./HeaderStyle";
 import { NavLink } from "react-router-dom";
 import { List, ListItem, ListItemIcon, ListItemText, Button } from "@mui/material";
 

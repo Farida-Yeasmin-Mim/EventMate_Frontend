@@ -1,7 +1,7 @@
-import { Drawer, Hidden } from "@mui/material";
-import React from "react";
-import { useStyles } from "./HeaderStyles";
-import SidenavData from "./SidenavData";
+import React from "react"
+import { Drawer, Hidden } from "@mui/material"
+import { useStyles } from "./HeaderStyle"
+import SidenavData from "./SidenavData"
 
 export default function SideNav({
   mobileOpen,
