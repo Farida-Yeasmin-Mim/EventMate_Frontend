@@ -15,7 +15,7 @@ import Offer from './Offer';
 import ProductCategories from './productcategories';
 import AddDecorationsForm from '../pages/services/addDecorationsForm';
 import FilterPage from './event/filter/FilterPage';
-import DashboardPage from './Dashboard/DashboardPage';
+import HeaderComponent from './Dashboard/HeaderComponent';
 
 
 
@@ -39,7 +39,7 @@ function AppRouter(props) {
                 <Route path="/Offer" element={<Offer/>} />
                 <Route path="/addDecorationsForm" element={<AddDecorationsForm/>} />
                 <Route path="/filterpage" element={<FilterPage/>} />
-                <Route path="/DashboardPage" element={<DashboardPage/>} />
+                <Route path="/HeaderComponent" element={<HeaderComponent/>} /> 
                                     
                 {/* path="file name" element="file function" */}
 
