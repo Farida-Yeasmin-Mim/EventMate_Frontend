@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Navbar() {
+export default function Link() {
   return (
     <div>
-        <h1>Hi i am mim</h1>
+        <h1>Link</h1>
     </div>
   )
 }
+
