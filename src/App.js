@@ -12,13 +12,14 @@ import AddDecorationsForm from './pages/services/addDecorationsForm';
 //import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Feed from './components/feed/Feed';
-import Dashboard from './components/vendor/Dashboard';
+// import Dashboard from './components/vendor/Dashboard';
 import CreateEvent from './components/event/CreateEvent';
 import OrderDetails from './components/event/OrderDetails';
 import AppRouter from './components/AppRouter';
 import FilterPage from './components/event/filter/FilterPage';
 import Notification from './components/Notification';
 import SearchBar from './components/event/filter/SearchBar';
+
 
 
 
@@ -60,6 +61,8 @@ function App() {
       <AppRouter/>
       {/* <Home/>  */}
      {/* <FilterPage/> */}
+
+
 
 
      

@@ -9,7 +9,7 @@ import OrderDetails from './event/OrderDetails';
 import SelectServices from './event/SelectServices';
 import Feed from './feed/Feed';
 import Navbar from './Navbar';
-import Dashboard from './vendor/Dashboard';
+// import Dashboard from './vendor/Dashboard';
 import Vendor_reg from './vendor/RegVendor';
 import Offer from './Offer';
 import ProductCategories from './productcategories';
@@ -42,7 +42,7 @@ function AppRouter(props) {
                 <Route path="/signup" element={<Signup/>} />
                 <Route path="/feed" element={<Feed/>} />
                 <Route path="/vendor_reg" element={<Vendor_reg/>} />
-                <Route path="/vendor_dashboard" element={<Dashboard/>} />
+                {/* <Route path="/vendor_dashboard" element={<Dashboard/>} /> */}
                 <Route path="/event_create" element={<CreateEvent/>} />
                 <Route path="/productcategories" element={<ProductCategories/>} /> 
                 <Route path="/select_services" element={<SelectServices/>} />

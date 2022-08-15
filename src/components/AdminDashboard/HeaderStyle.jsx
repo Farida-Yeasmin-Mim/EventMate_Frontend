@@ -49,6 +49,10 @@ export const useStyles = makeStyles((theme) => {
     //   textTransform: "capitalize",
     // },
 
+
+    wrapper:{padding:theme.spacing(2,2,0,32)},
+
+
     //sidenav
     drawerPaper: {
       width: "250px",

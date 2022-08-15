@@ -12,8 +12,8 @@ export default function SideNav({
 
   return (
     <nav className={classes.drawer} aria-label='mailbox folders'>
-     
-      
+
+
       <Hidden mdUp implementation='css'>
         <Drawer
           variant='temporary'
@@ -30,7 +30,7 @@ export default function SideNav({
         </Drawer>
       </Hidden>
 
-      
+
       <Hidden smDown implementation='css'>
         <Drawer
           classes={{

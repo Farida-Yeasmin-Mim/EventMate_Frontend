@@ -11,7 +11,7 @@ import { List, ListItem, ListItemIcon, ListItemText, Button } from "@mui/materia
 export default function SidenavData({ handleDrawerClose }) {
     const classes = useStyles();
     const listItemData = [
-        { label: "Dashobard", link: "/dashboard", icon: <DashboardIcon /> },
+        { label: "Dashboard", link: "/dashboards", icon: <DashboardIcon /> },
         { label: "Link", link: "/link", icon: <PostAddSharpIcon /> },
         {label: "Notification", link: "/notification", icon: <NotificationsActiveSharpIcon />},
         { label: "Logout", link: "/logout", icon: <ExitToAppSharpIcon /> },
