@@ -15,15 +15,26 @@ import Offer from './Offer';
 import ProductCategories from './productcategories';
 import AddDecorationsForm from '../pages/services/addDecorationsForm';
 import FilterPage from './event/filter/FilterPage';
-import HeaderComponent from './Dashboard/HeaderComponent';
+import HeaderComponent from './AdminDashboard/HeaderComponent';
+import { createTheme, ThemeProvider } from '@mui/material';
+import { orange } from '@mui/material/colors';
 
 
+const theme = createTheme({
+    status: {
+      danger: orange[500],
+    },
+  });
 
+  
 function AppRouter(props) {
+
     return (
-        <Router>
-            
+        
+        <Router>    
             <Navbar />
+            <ThemeProvider theme={theme}>
+            
             <Routes>
                 <Route path="/" exact element={<Home/>} />
                 <Route path="/login" element={<Login/>} />
@@ -38,14 +49,14 @@ function AppRouter(props) {
                 <Route path="/Order_details" element={<OrderDetails/>} />
                 <Route path="/Offer" element={<Offer/>} />
                 <Route path="/addDecorationsForm" element={<AddDecorationsForm/>} />
-                <Route path="/filterpage" element={<FilterPage/>} />
-                <Route path="/HeaderComponent" element={<HeaderComponent/>} /> 
-                                    
+                <Route path="/filterpage" element={<FilterPage/>} />               
+                <Route path="/HeaderComponent" element={<HeaderComponent/>} />
+                                                 
                 {/* path="file name" element="file function" */}
 
-                
+             
             </Routes>
-           
+            </ThemeProvider>           
       </Router>
     );
 }
