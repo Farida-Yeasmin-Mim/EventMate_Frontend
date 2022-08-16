@@ -20,6 +20,11 @@ import { createTheme, ThemeProvider } from '@mui/material';
 import { orange } from '@mui/material/colors';
 
 
+import Chart from './Dashboard/Charts';
+import FeaturedInfo from './Dashboard/FeaturedInfo';
+import Sidebar from './Dashboard/Sidebar';
+
+
 const theme = createTheme({
     status: {
       danger: orange[500],
@@ -50,7 +55,11 @@ function AppRouter(props) {
                 <Route path="/Offer" element={<Offer/>} />
                 <Route path="/addDecorationsForm" element={<AddDecorationsForm/>} />
                 <Route path="/filterpage" element={<FilterPage/>} />               
-                <Route path="/HeaderComponent" element={<HeaderComponent/>} />
+                <Route path="/HeaderComponent" element={<HeaderComponent/>}  /> 
+                
+                <Route path="/Charts" element={<Chart/>} />
+                <Route path="/FeaturedInfo" element={<FeaturedInfo/>} />
+                <Route path="/Sidebar" element={<Sidebar/>} /> 
                                                  
                 {/* path="file name" element="file function" */}
 
