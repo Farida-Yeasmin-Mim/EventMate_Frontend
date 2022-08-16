@@ -20,8 +20,9 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <div className="sidebarWrapper">
-                
-                
+
+
+                {/* Dashboard */}
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
@@ -41,8 +42,9 @@ function Sidebar() {
                         </li>
                     </ul>
                 </div>
-                
-                
+
+
+                {/* Quick Menu */}
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
@@ -68,8 +70,9 @@ function Sidebar() {
                         </li>
                     </ul>
                 </div>
-                
-                
+
+
+                {/* Notifications */}
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Notifications</h3>
                     <ul className="sidebarList">
@@ -87,8 +90,9 @@ function Sidebar() {
                         </li>
                     </ul>
                 </div>
-                
-                
+
+
+                {/* Staff */}
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Staff</h3>
                     <ul className="sidebarList">
@@ -106,8 +110,8 @@ function Sidebar() {
                         </li>
                     </ul>
                 </div>
-            
-            
+
+
             </div>
         </div>
     );

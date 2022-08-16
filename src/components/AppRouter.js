@@ -23,6 +23,9 @@ import { orange } from '@mui/material/colors';
 import Chart from './Dashboard/Charts';
 import FeaturedInfo from './Dashboard/FeaturedInfo';
 import Sidebar from './Dashboard/Sidebar';
+import Topbar from './Dashboard/Topbar';
+import WidgetLg from './Dashboard/WidgetLg';
+import WidgetSm from './Dashboard/WidgetSm';
 
 
 const theme = createTheme({
@@ -60,6 +63,9 @@ function AppRouter(props) {
                 <Route path="/Charts" element={<Chart/>} />
                 <Route path="/FeaturedInfo" element={<FeaturedInfo/>} />
                 <Route path="/Sidebar" element={<Sidebar/>} /> 
+                <Route path="/Topbar" element={<Topbar/>} /> 
+                <Route path="/WidgetLg" element={<WidgetLg/>} /> 
+                <Route path="/WidgetSm" element={<WidgetSm/>} /> 
                                                  
                 {/* path="file name" element="file function" */}
 
