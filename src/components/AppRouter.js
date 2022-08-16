@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from '../pages/auth/Login';
 import Logout from '../pages/auth/Logout';
 import Signup from '../pages/auth/Signup';
-import Home from '../pages/Home';
+// import Home from '../pages/Home';
 import CreateEvent from './event/CreateEvent';
 import OrderDetails from './event/OrderDetails';
 import SelectServices from './event/SelectServices';
@@ -26,6 +26,12 @@ import Sidebar from './Dashboard/Sidebar';
 import Topbar from './Dashboard/Topbar';
 import WidgetLg from './Dashboard/WidgetLg';
 import WidgetSm from './Dashboard/WidgetSm';
+import Home from './Dashboard/Home';
+import UserList from './Dashboard/UserList';
+import User from './Dashboard/User';
+import Product from './Dashboard/Product';
+import ProductList from './Dashboard/ProductList';
+
 
 
 const theme = createTheme({
@@ -40,7 +46,7 @@ function AppRouter(props) {
     return (
         
         <Router>    
-            <Navbar />
+            {/* <Navbar /> */}
             <ThemeProvider theme={theme}>
             
             <Routes>
@@ -66,6 +72,11 @@ function AppRouter(props) {
                 <Route path="/Topbar" element={<Topbar/>} /> 
                 <Route path="/WidgetLg" element={<WidgetLg/>} /> 
                 <Route path="/WidgetSm" element={<WidgetSm/>} /> 
+                <Route path="/Home" element={<Home/>} /> 
+                <Route path="/UserList" element={<UserList/>} /> 
+                <Route path="/User" element={<User/>} /> 
+                <Route path="/Product" element={<Product/>} /> 
+                <Route path="/ProductList" element={<ProductList/>} /> 
                                                  
                 {/* path="file name" element="file function" */}
 
