@@ -10,9 +10,13 @@ import Topbar from './Topbar';
 
 function Home() {
   return (
-    <div className="home">
-        {/* <Sidebar/> */}
-        <Topbar/>
+
+    <div className="container">
+
+
+<div className="home">
+        {/* <Topbar/> */}
+        
       <FeaturedInfo />
       <Charts data={userData} title="User Analytics" grid dataKey="Active User"/>
       <div className="homeWidgets">
@@ -20,6 +24,9 @@ function Home() {
         <WidgetLg/>
       </div>
     </div>
+
+    </div>
+    
   );
 }
 export default Home;

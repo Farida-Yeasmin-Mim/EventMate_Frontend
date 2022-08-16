@@ -3,11 +3,20 @@ import './styles/product.css'
 import {Publish} from '@mui/icons-material'
 import { productData } from "./dummyData";
 import Charts from './Charts';
+import Sidebar from "./Sidebar";
+import Topbar from "./Topbar";
 
 
 function Product() {
-  
+
     return (
+
+        <div>
+        <Topbar/>
+        <div className="container">
+          <Sidebar />
+
+
     <div className="product">
       <div className="productTitleContainer">
         <h1 className="productTitle">Product</h1>
@@ -73,6 +82,11 @@ function Product() {
           </form>
       </div>
     </div>
+
+
+    </div>
+    </div>
+
   );
 }
 export default Product;

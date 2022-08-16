@@ -12,12 +12,23 @@ import DynamicFeedTwoToneIcon from '@mui/icons-material/DynamicFeedTwoTone';
 import ChatBubbleOutlineTwoToneIcon from '@mui/icons-material/ChatBubbleOutlineTwoTone';
 import WorkOutlineTwoToneIcon from '@mui/icons-material/WorkOutlineTwoTone';
 import ReportGmailerrorredTwoToneIcon from '@mui/icons-material/ReportGmailerrorredTwoTone';
+import Topbar from './Topbar';
+
 
 
 
 function Sidebar() {
 
     return (
+        
+       
+        <div>
+            <Topbar />
+            <div className="container">
+                <Sidebar />
+        
+
+
         <div className="sidebar">
             <div className="sidebarWrapper">
 
@@ -26,20 +37,24 @@ function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
-                        <Link to="/" className="link">
+                        <Link to="/dashboard" className="link">
                             <li className="sidebarListItem active">
                                 <LineStyleIcon className="sidebarIcon" />
                                 Home
                             </li>
                         </Link>
-                        <li className="sidebarListItem">
+                         
+                        <Link to="/productList" className="link">
+                         <li className="sidebarListItem">
                             <TimelineIcon className="sidebarIcon" />
                             Analytics
                         </li>
+                        </Link>
+
                         <li className="sidebarListItem">
                             <TrendingUpIcon className="sidebarIcon" />
                             Sales
-                        </li>
+                        </li> 
                     </ul>
                 </div>
 
@@ -48,13 +63,13 @@ function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                        <Link to="/users" className="link">
+                        <Link to="/dashboard_user" className="link">
                             <li className="sidebarListItem">
                                 <PermIdentityTwoToneIcon className="sidebarIcon" />
                                 Users
                             </li>
                         </Link>
-                        <Link to="/products" className="link">
+                        <Link to="/product" className="link">
                             <li className="sidebarListItem">
                                 <StorefrontTwoToneIcon className="sidebarIcon" />
                                 Products
@@ -96,14 +111,20 @@ function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Staff</h3>
                     <ul className="sidebarList">
+                    <Link to="/newUser" className="link">
                         <li className="sidebarListItem">
                             <WorkOutlineTwoToneIcon className="sidebarIcon" />
                             Manage
                         </li>
+                        </Link>
+
+                        <Link to="/userList" className="link">
                         <li className="sidebarListItem">
                             <TimelineIcon className="sidebarIcon" />
                             Analytics
                         </li>
+                        </Link>
+
                         <li className="sidebarListItem">
                             <ReportGmailerrorredTwoToneIcon className="sidebarIcon" />
                             Reports
@@ -113,6 +134,10 @@ function Sidebar() {
 
 
             </div>
+        </div>
+
+
+        </div>
         </div>
     );
 }

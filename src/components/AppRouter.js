@@ -70,22 +70,22 @@ function AppRouter(props) {
                 {/* <Route path="/HeaderComponent" element={<HeaderComponent/>}  />  */}
                 
                 
-                <Route path="/Charts" element={<Chart/>} />
-                <Route path="/FeaturedInfo" element={<FeaturedInfo/>} />
-                <Route path="/Sidebar" element={<Sidebar/>} /> 
-                <Route path="/Topbar" element={<Topbar/>} /> 
-                <Route path="/WidgetLg" element={<WidgetLg/>} /> 
-                <Route path="/WidgetSm" element={<WidgetSm/>} /> 
-                <Route path="/Home" element={<Home/>} /> 
-                <Route path="/UserList" element={<UserList/>} /> 
-                <Route path="/User" element={<User/>} /> 
-                <Route path="/Product" element={<Product/>} /> 
-                <Route path="/ProductList" element={<ProductList/>} /> 
-                <Route path="/Dashboard" element={<Dashboard/>} /> 
+                <Route path="/charts" element={<Chart/>} />
+                <Route path="/featuredInfo" element={<FeaturedInfo/>} />
+                <Route path="/sidebar" element={<Sidebar/>} /> 
+                <Route path="/topbar" element={<Topbar/>} /> 
+                <Route path="/widgetLg" element={<WidgetLg/>} /> 
+                <Route path="/widgetSm" element={<WidgetSm/>} /> 
+                <Route path="/home" element={<Home/>} /> 
+                <Route path="/userList" element={<UserList/>} /> 
+                <Route path="/dashboard_user" element={<User/>} /> 
+                <Route path="/product" element={<Product/>} /> 
+                <Route path="/productList" element={<ProductList/>} /> 
+                <Route path="/dashboard" element={<Dashboard/>} /> 
                 <Route path="/newUser" element={<NewUser/>} />
                 <Route path="/newproduct" element={<NewProduct/>} />
                                                  
-                {/* path="file name" element="file function" */}
+                {/* path="url" element="file name" */}
 
              
             </Routes>
