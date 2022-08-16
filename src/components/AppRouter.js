@@ -15,7 +15,7 @@ import Offer from './Offer';
 import ProductCategories from './productcategories';
 import AddDecorationsForm from '../pages/services/addDecorationsForm';
 import FilterPage from './event/filter/FilterPage';
-import HeaderComponent from './AdminDashboard/HeaderComponent';
+// import HeaderComponent from './AdminDashboard/HeaderComponent';
 import { createTheme, ThemeProvider } from '@mui/material';
 import { orange } from '@mui/material/colors';
 
@@ -31,6 +31,9 @@ import UserList from './Dashboard/UserList';
 import User from './Dashboard/User';
 import Product from './Dashboard/Product';
 import ProductList from './Dashboard/ProductList';
+import Dashboard from './Dashboard/Dashboard';
+import NewUser from './Dashboard/NewUser';
+import NewProduct from './Dashboard/NewProduct';
 
 
 
@@ -64,7 +67,8 @@ function AppRouter(props) {
                 <Route path="/Offer" element={<Offer/>} />
                 <Route path="/addDecorationsForm" element={<AddDecorationsForm/>} />
                 <Route path="/filterpage" element={<FilterPage/>} />               
-                <Route path="/HeaderComponent" element={<HeaderComponent/>}  /> 
+                {/* <Route path="/HeaderComponent" element={<HeaderComponent/>}  />  */}
+                
                 
                 <Route path="/Charts" element={<Chart/>} />
                 <Route path="/FeaturedInfo" element={<FeaturedInfo/>} />
@@ -77,6 +81,9 @@ function AppRouter(props) {
                 <Route path="/User" element={<User/>} /> 
                 <Route path="/Product" element={<Product/>} /> 
                 <Route path="/ProductList" element={<ProductList/>} /> 
+                <Route path="/Dashboard" element={<Dashboard/>} /> 
+                <Route path="/newUser" element={<NewUser/>} />
+                <Route path="/newproduct" element={<NewProduct/>} />
                                                  
                 {/* path="file name" element="file function" */}
 
