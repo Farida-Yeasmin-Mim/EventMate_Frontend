@@ -1,21 +1,17 @@
 import * as React from 'react';
-// import { makeStyles, styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { blue, red } from '@mui/material/colors';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { Link as RLink } from "react-router-dom";
-import { Button, Grid, Paper } from '@mui/material';
-import CommentIcon from '@mui/icons-material/Comment';
+import InsertCommentTwoToneIcon from '@mui/icons-material/InsertCommentTwoTone';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteTwoToneIcon from '@mui/icons-material/FavoriteTwoTone';
 import SaveAltIcon from '@mui/icons-material/SaveAlt';
 import { makeStyles } from '@mui/styles'
 
@@ -24,9 +20,9 @@ import { makeStyles } from '@mui/styles'
 const useStyles = makeStyles({
     root: {
         padding: 10,
-        height: '80vh',
+        height: '83vh',
         width: 330,
-        margin: '20px auto'
+        margin: '20px auto',
         //   maxWidth: 345
     },
     media: {
@@ -69,17 +65,16 @@ export default function Post() {
 
 
                 <CardContent>
-                    <Typography variant="body2" color="text.secondary">Glance through some of the most elegant, classy and resplendent wedding décor created by master wedding planners and florists</Typography>
-                    
-                </CardContent>
+                    <Typography variant="body2" color="text.secondary">Glance through some of the most elegant, classy and resplendent wedding décor created by wedding planners and Farida Yeasmin Mim.</Typography>                </CardContent>
 
 
                 <CardActions disableSpacing>
-                    <IconButton aria-label="add to favorites"><FavoriteIcon /></IconButton>
+                    <IconButton aria-label="add to favorites"><FavoriteTwoToneIcon /></IconButton>
                     {/* <Button size="small" color="primary">View Likes</Button> */}
 
-                    <IconButton aria-label="share"><CommentIcon /></IconButton>
+                    <IconButton aria-label="share"><InsertCommentTwoToneIcon /></IconButton>
                     {/* <Button size="small" color="secondary">View Comments</Button> */}
+                    
                     {/* <RLink to="/Order_details" style={{ textDecoration: 'none' }}><Button variant="contained">Select Vendor</Button></RLink> */}
                     <IconButton aria-label="share"><SaveAltIcon /></IconButton>
                 
