@@ -35,6 +35,7 @@ import Dashboard from './Dashboard/Dashboard';
 import NewUser from './Dashboard/NewUser';
 import NewProduct from './Dashboard/NewProduct';
 import Post from './Post';
+import ProductDetails from './ProductDetails/ProductDetails';
 
 
 
@@ -68,7 +69,8 @@ function AppRouter(props) {
                 <Route path="/Offer" element={<Offer/>} />
                 <Route path="/addDecorationsForm" element={<AddDecorationsForm/>} />
                 <Route path="/filterpage" element={<FilterPage/>} />
-                <Route path="/post" element={<Post/>} />           
+                <Route path="/post" element={<Post/>} />  
+                <Route path="/productDetails" element={<ProductDetails/>} />           
                 {/* <Route path="/HeaderComponent" element={<HeaderComponent/>}  />  */}
                 
                 
