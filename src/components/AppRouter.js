@@ -34,6 +34,7 @@ import ProductList from './Dashboard/ProductList';
 import Dashboard from './Dashboard/Dashboard';
 import NewUser from './Dashboard/NewUser';
 import NewProduct from './Dashboard/NewProduct';
+import Post from './Post';
 
 
 
@@ -66,10 +67,12 @@ function AppRouter(props) {
                 <Route path="/Order_details" element={<OrderDetails/>} />
                 <Route path="/Offer" element={<Offer/>} />
                 <Route path="/addDecorationsForm" element={<AddDecorationsForm/>} />
-                <Route path="/filterpage" element={<FilterPage/>} />               
+                <Route path="/filterpage" element={<FilterPage/>} />
+                <Route path="/post" element={<Post/>} />           
                 {/* <Route path="/HeaderComponent" element={<HeaderComponent/>}  />  */}
                 
                 
+                {/* Dashboard */}
                 <Route path="/charts" element={<Chart/>} />
                 <Route path="/featuredInfo" element={<FeaturedInfo/>} />
                 <Route path="/sidebar" element={<Sidebar/>} /> 

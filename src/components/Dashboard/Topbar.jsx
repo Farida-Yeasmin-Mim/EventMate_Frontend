@@ -12,6 +12,8 @@ function Topbar() {
           <span className="logo">EventMate</span>
         </div>
         
+        
+        
         <div className="topRight">
           <div className="topbarIconContainer">
             <NotificationsNone />

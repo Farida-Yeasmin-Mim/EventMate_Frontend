@@ -1,9 +1,17 @@
+import Sidebar from './Sidebar';
 import './styles/newUser.css'
+import Topbar from './Topbar';
 
 
 function NewUser() {
   
     return (
+
+      <div>
+        <Topbar/>
+        <div className="container">
+          <Sidebar />
+
     <div className="newUser">
       <h1 className="newUserTitle">New User</h1>
       <form className="newUserForm">
@@ -51,6 +59,9 @@ function NewUser() {
         </div>
         <button className="newUserButton">Create</button>
       </form>
+    </div>
+
+    </div>
     </div>
   );
 }

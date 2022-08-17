@@ -1,9 +1,18 @@
+import Sidebar from './Sidebar';
 import './styles/newProduct.css'
+import Topbar from './Topbar';
 
 
 function NewProduct() {
+  
   return (
-    <div className="newProduct">
+  
+    <div>
+        <Topbar/>
+        <div className="container">
+          <Sidebar />
+
+  <div className="newProduct">
       <h1 className="addProductTitle">New Product</h1>
       <form className="addProductForm">
         <div className="addProductItem">
@@ -27,6 +36,9 @@ function NewProduct() {
         </div>
         <button className="addProductButton">Create</button>
       </form>
+    </div>
+
+    </div>
     </div>
   );
 }

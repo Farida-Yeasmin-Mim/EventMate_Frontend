@@ -20,14 +20,6 @@ import Topbar from './Topbar';
 function Sidebar() {
 
     return (
-        
-       
-        <div>
-            <Topbar />
-            <div className="container">
-                <Sidebar />
-        
-
 
         <div className="sidebar">
             <div className="sidebarWrapper">
@@ -43,25 +35,25 @@ function Sidebar() {
                                 Home
                             </li>
                         </Link>
-                         
+
                         <Link to="/productList" className="link">
-                         <li className="sidebarListItem">
-                            <TimelineIcon className="sidebarIcon" />
-                            Analytics
-                        </li>
+                            <li className="sidebarListItem">
+                                <TimelineIcon className="sidebarIcon" />
+                                Analytics
+                            </li>
                         </Link>
 
                         <li className="sidebarListItem">
                             <TrendingUpIcon className="sidebarIcon" />
                             Sales
-                        </li> 
+                        </li>
                     </ul>
                 </div>
 
 
-                {/* Quick Menu */}
+                {/* Edit Menu */}
                 <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">Quick Menu</h3>
+                    <h3 className="sidebarTitle">Edit</h3>
                     <ul className="sidebarList">
                         <Link to="/dashboard_user" className="link">
                             <li className="sidebarListItem">
@@ -73,6 +65,26 @@ function Sidebar() {
                             <li className="sidebarListItem">
                                 <StorefrontTwoToneIcon className="sidebarIcon" />
                                 Products
+                            </li>
+                        </Link>
+                    </ul>
+                </div>
+
+
+                {/* Quick Menu */}
+                <div className="sidebarMenu">
+                    <h3 className="sidebarTitle">Quick Menu</h3>
+                    <ul className="sidebarList">
+                        <Link to="/userList" className="link">
+                            <li className="sidebarListItem">
+                                <PermIdentityTwoToneIcon className="sidebarIcon" />
+                                Users List
+                            </li>
+                        </Link>
+                        <Link to="/productList" className="link">
+                            <li className="sidebarListItem">
+                                <StorefrontTwoToneIcon className="sidebarIcon" />
+                                Products List
                             </li>
                         </Link>
                         <li className="sidebarListItem">
@@ -111,18 +123,18 @@ function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Staff</h3>
                     <ul className="sidebarList">
-                    <Link to="/newUser" className="link">
-                        <li className="sidebarListItem">
-                            <WorkOutlineTwoToneIcon className="sidebarIcon" />
-                            Manage
-                        </li>
+                        <Link to="/newUser" className="link">
+                            <li className="sidebarListItem">
+                                <WorkOutlineTwoToneIcon className="sidebarIcon" />
+                                Manage
+                            </li>
                         </Link>
 
-                        <Link to="/" className="link">
-                        <li className="sidebarListItem">
-                            <TimelineIcon className="sidebarIcon" />
-                            Analytics
-                        </li>
+                        <Link to="/newProduct" className="link">
+                            <li className="sidebarListItem">
+                                <TimelineIcon className="sidebarIcon" />
+                                Analytics
+                            </li>
                         </Link>
 
                         <li className="sidebarListItem">
@@ -134,10 +146,6 @@ function Sidebar() {
 
 
             </div>
-        </div>
-
-
-        </div>
         </div>
     );
 }
