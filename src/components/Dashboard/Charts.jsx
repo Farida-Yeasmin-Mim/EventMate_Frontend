@@ -1,12 +1,5 @@
 import './styles/chart.css'
-import {
-    LineChart,
-    Line,
-    XAxis,
-    CartesianGrid,
-    Tooltip,
-    ResponsiveContainer,
-} from "recharts";
+import {LineChart, Line, XAxis, CartesianGrid, Tooltip, ResponsiveContainer} from "recharts";
 
 
 function Chart({ title, data, dataKey, grid }) {

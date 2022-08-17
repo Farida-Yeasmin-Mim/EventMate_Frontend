@@ -1,5 +1,4 @@
 import './styles/featuredInfo.css'
-// import { ArrowDownward, ArrowUpward } from "@mui/material";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 

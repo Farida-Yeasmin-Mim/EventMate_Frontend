@@ -11,22 +11,15 @@ import Topbar from './Topbar';
 function Home() {
   return (
 
-    <div className="container">
-
-
-<div className="home">
-        {/* <Topbar/> */}
-        
+    <div className="home">
       <FeaturedInfo />
-      <Charts data={userData} title="User Analytics" grid dataKey="Active User"/>
+      <Charts data={userData} title="User Analytics" grid dataKey="Active User" />
       <div className="homeWidgets">
-        <WidgetSm/>
-        <WidgetLg/>
+        <WidgetSm />
+        <WidgetLg />
       </div>
     </div>
 
-    </div>
-    
   );
 }
 export default Home;

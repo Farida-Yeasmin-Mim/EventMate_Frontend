@@ -118,7 +118,7 @@ function Sidebar() {
                         </li>
                         </Link>
 
-                        <Link to="/userList" className="link">
+                        <Link to="/" className="link">
                         <li className="sidebarListItem">
                             <TimelineIcon className="sidebarIcon" />
                             Analytics
