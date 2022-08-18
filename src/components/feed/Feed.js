@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
-import {Grid} from '@mui/material';
+import { Divider, Grid } from '@mui/material';
 import { Link } from "react-router-dom";
+import UpperList from './UpperList';
+import LowerList from './LowerList';
+import HorizontalStepper from './HorizontalStepper';
+// import PostItem from './PostItem';
+import { dataList } from './PostConstants';
+import PostList from './PostList';
+// import EventDetailsForm from '../event/EventDetailsForm';
 
 
 function Feed(props) {
@@ -27,12 +34,41 @@ function Feed(props) {
     //     console.log(data.comment.body);
     //     window.alert(data.comment.body);
     // });
+    const [postList, setPostList] = useState(dataList); 
+
     return (
         <div>
-            <Grid align='center'>
-                <h2>Feed</h2>
-                <Link to="/event_create" style={{ textDecoration: 'none' }}><Button variant="contained">Create an event</Button></Link>
-                <Link to="/vendor_reg" style={{ textDecoration: 'none' }}><Button variant="outlined">Register a vendor</Button></Link>
+            <Grid container spacing={2} style={{ marginTop: "3px" }} >
+                
+                <Grid item xs={12} md={3}>
+                    {/* <Link to="/vendor_reg" style={{ textDecoration: 'none' }}><Button variant="outlined">Register a vendor</Button></Link> */}
+                    <h3>Your Vendors </h3>
+                    <UpperList/>
+                    <br />
+                    <Divider/>
+                    <br />
+                    <h3>Following Vendors </h3>
+                    <LowerList/>
+                </Grid>
+
+
+
+                <Grid item xs={12} md={5}>
+                    <h3>Post list</h3>
+                    <PostList list={postList}/>
+                </Grid>
+
+
+
+                <Grid item xs={12} md={4}>
+                    {/* <EventDetailsForm /> */}
+                    <h3>Your Events </h3>
+                    <br/>
+                    <HorizontalStepper/>
+                </Grid>
+
+               
+
             </Grid>
         </div>
     );

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Grid, Paper, Avatar, Button, FormControlLabel, TextField, Link, Typography, Checkbox } from '@mui/material';
-import SelectAreas from '../../components/seletionTextField/selectAreas';
+import SelectAreas from '../../components/seletionTextField/SelectAreas';
 import FilterVintageTwoToneIcon from '@mui/icons-material/FilterVintageTwoTone';
 import { Link as RLink } from "react-router-dom";
 import { useState, useEffect } from 'react';

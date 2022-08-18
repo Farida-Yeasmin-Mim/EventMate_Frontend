@@ -34,8 +34,12 @@ import ProductList from './Dashboard/ProductList';
 import Dashboard from './Dashboard/Dashboard';
 import NewUser from './Dashboard/NewUser';
 import NewProduct from './Dashboard/NewProduct';
-import Post from './Post';
+import PostItem from './feed/PostItem';
 import ProductDetails from './ProductDetails/ProductDetails';
+import HorizontalStepper from './feed/HorizontalStepper';
+import LowerList from './feed/LowerList';
+import UpperList from './feed/UpperList';
+
 
 
 
@@ -51,7 +55,7 @@ function AppRouter(props) {
     return (
         
         <Router>    
-            {/* <Navbar /> */}
+            <Navbar />
             <ThemeProvider theme={theme}>
             
             <Routes>
@@ -69,8 +73,11 @@ function AppRouter(props) {
                 <Route path="/Offer" element={<Offer/>} />
                 <Route path="/addDecorationsForm" element={<AddDecorationsForm/>} />
                 <Route path="/filterpage" element={<FilterPage/>} />
-                <Route path="/post" element={<Post/>} />  
-                <Route path="/productDetails" element={<ProductDetails/>} />           
+                <Route path="/post" element={<PostItem/>} />  
+                <Route path="/productDetails" element={<ProductDetails/>} />  
+                <Route path="/stepper" element={<HorizontalStepper/>} />
+                <Route path="/lowerlist" element={<LowerList/>} />  
+                <Route path="/upperlist" element={<UpperList/>} />          
                 {/* <Route path="/HeaderComponent" element={<HeaderComponent/>}  />  */}
                 
                 
