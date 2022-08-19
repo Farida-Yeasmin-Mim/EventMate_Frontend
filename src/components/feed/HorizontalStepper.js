@@ -6,9 +6,8 @@ import StepLabel from '@mui/material/StepLabel';
 
 const steps = [
   'Create an Event',
-  'Create an ad group',
-  'Create an ad',
-  'Create an ad',
+  'Place Order',
+  'Confirm Order',
 ];
 
 export default function HorizontalStepper() {
