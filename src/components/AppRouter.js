@@ -39,6 +39,7 @@ import ProductDetails from './ProductDetails/ProductDetails';
 import HorizontalStepper from './feed/HorizontalStepper';
 import LowerList from './feed/LowerList';
 import UpperList from './feed/UpperList';
+import RightList from './feed/RightList';
 
 
 
@@ -77,7 +78,8 @@ function AppRouter(props) {
                 <Route path="/productDetails" element={<ProductDetails/>} />  
                 <Route path="/stepper" element={<HorizontalStepper/>} />
                 <Route path="/lowerlist" element={<LowerList/>} />  
-                <Route path="/upperlist" element={<UpperList/>} />          
+                <Route path="/upperlist" element={<UpperList/>} /> 
+                <Route path="/Rightlist" element={<RightList/>} />          
                 {/* <Route path="/HeaderComponent" element={<HeaderComponent/>}  />  */}
                 
                 

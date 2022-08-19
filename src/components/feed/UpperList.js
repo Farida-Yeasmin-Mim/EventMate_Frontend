@@ -21,20 +21,20 @@ export default function UpperList() {
 
   return (
     <List
-      sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+      sx={{ width: '100%', maxWidth: 360, bgcolor: '#f2f2f2' }}
       component="nav"
       aria-labelledby="nested-list-subheader"
-    //   subheader={
-    //     <ListSubheader component="div" id="nested-list-subheader">
-    //       Nested List Items
-    //     </ListSubheader>
-    //   }
+      // subheader={
+      //   <ListSubheader component="div" id="nested-list-subheader">
+      //     Nested List Items
+      //   </ListSubheader>
+      // }
     >
       <ListItemButton>
         <ListItemIcon>
           <SendIcon />
         </ListItemIcon>
-        <ListItemText primary="Sent mail" />
+        <ListItemText primary="Sent message" />
       </ListItemButton>
 
 

@@ -8,7 +8,23 @@ import HorizontalStepper from './HorizontalStepper';
 // import PostItem from './PostItem';
 import { dataList } from './PostConstants';
 import PostList from './PostList';
+import { makeStyles } from '@mui/styles'
+import RightList from './RightList';
 // import EventDetailsForm from '../event/EventDetailsForm';
+
+
+const useStyles = makeStyles({
+    root: {
+        backgroundColor: '#f2f2f2',
+        
+    },
+    post: {
+
+        // backgroundColor: '#f2f2f2',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+});
 
 
 function Feed(props) {
@@ -35,10 +51,12 @@ function Feed(props) {
     //     window.alert(data.comment.body);
     // });
     const [postList, setPostList] = useState(dataList); 
+    const classes = useStyles();
 
     return (
         <div>
-            <Grid container spacing={2} style={{ marginTop: "3px" }} >
+            <Grid className={classes.root}
+            container spacing={2} style={{ marginTop: "3px" }} >
                 
                 <Grid item xs={12} md={3}>
                     {/* <Link to="/vendor_reg" style={{ textDecoration: 'none' }}><Button variant="outlined">Register a vendor</Button></Link> */}
@@ -53,18 +71,24 @@ function Feed(props) {
 
 
 
-                <Grid item xs={12} md={5}>
-                    <h3>Post list</h3>
+                <Grid className={classes.post}
+                item xs={12} md={5}>
+                    {/* <h3>Post list</h3> */}
                     <PostList list={postList}/>
                 </Grid>
 
 
 
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={3}>
                     {/* <EventDetailsForm /> */}
                     <h3>Your Events </h3>
                     <br/>
                     <HorizontalStepper/>
+                    <br />
+                    <Divider/>
+                    <br />
+                    <h3>Contacts</h3>
+                    <RightList/>
                 </Grid>
 
                

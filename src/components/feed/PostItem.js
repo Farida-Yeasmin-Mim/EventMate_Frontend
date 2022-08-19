@@ -22,9 +22,8 @@ const useStyles = makeStyles({
     root: {
         padding: 10,
         height: '83vh',
-        width: 340,
+        width: 430,
         margin: '20px auto',
-        //   maxWidth: 345
     },
     media: {
         height: 250,
@@ -53,7 +52,7 @@ const useStyles = makeStyles({
         <Card className={classes.root}>
 
             <CardHeader
-                avatar={<Avatar sx={{ bgcolor: blue[500] }} aria-label="recipe">FY</Avatar>}
+                avatar= {<Avatar alt="Cindy Baker" src={item.logourl}/>}
                 action={<IconButton aria-label="settings"><MoreVertIcon /></IconButton>}
                 title={item.vendorName}
                 subheader={item.upload}
@@ -61,14 +60,14 @@ const useStyles = makeStyles({
 
 
             <CardContent>
-                <Typography variant="body2" color="text.secondary"><b>{item.title}</b></Typography>
+                <Typography variant="body2" color="text.secondary"><h3><b>{item.title}</b></h3></Typography>
             </CardContent>
 
 
             <CardMedia
                 className={classes.media}
                 image= {item.image}
-                alt="Paella dish"
+                
             />
 
             
@@ -85,8 +84,7 @@ const useStyles = makeStyles({
 
 
             <CardContent>
-                <Typography variant="body2" color="text.secondary">{item.details}
-                </Typography>                
+                <Typography variant="body2" color="text.secondary"><b>{item.details}</b></Typography>                
             </CardContent>
 
 
