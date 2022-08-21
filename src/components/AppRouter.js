@@ -14,7 +14,6 @@ import Vendor_reg from './vendor/RegVendor';
 import Offer from './Offer';
 import ProductCategories from './productcategories';
 import AddDecorationsForm from '../pages/services/addDecorationsForm';
-import FilterPage from './event/filter/FilterPage';
 // import HeaderComponent from './AdminDashboard/HeaderComponent';
 import { createTheme, ThemeProvider } from '@mui/material';
 import { orange } from '@mui/material/colors';
@@ -40,7 +39,10 @@ import HorizontalStepper from './feed/HorizontalStepper';
 import LowerList from './feed/LowerList';
 import UpperList from './feed/UpperList';
 import RightList from './feed/RightList';
+
+import FilterPage from './event/filter/FilterPage';
 import FilterPage2 from './event/Photography/FilterPage2';
+import FilterPage3 from './event/Music/FilterPage3';
 
 
 
@@ -74,7 +76,6 @@ function AppRouter(props) {
                 <Route path="/Order_details" element={<OrderDetails/>} />
                 <Route path="/Offer" element={<Offer/>} />
                 <Route path="/addDecorationsForm" element={<AddDecorationsForm/>} />
-                <Route path="/decoration" element={<FilterPage/>} />
                 <Route path="/post" element={<PostItem/>} />  
                 <Route path="/productDetails" element={<ProductDetails/>} />  
                 <Route path="/stepper" element={<HorizontalStepper/>} />
@@ -82,7 +83,9 @@ function AppRouter(props) {
                 <Route path="/upperlist" element={<UpperList/>} /> 
                 <Route path="/Rightlist" element={<RightList/>} />          
                 {/* <Route path="/HeaderComponent" element={<HeaderComponent/>}  />  */}
+                <Route path="/decoration" element={<FilterPage/>} />
                 <Route path="/photography" element={<FilterPage2/>} />
+                <Route path="/music" element={<FilterPage3/>} />
                 
                 
                 {/* Dashboard */}

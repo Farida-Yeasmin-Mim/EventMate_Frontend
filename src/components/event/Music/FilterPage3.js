@@ -7,7 +7,7 @@ import '../../event/filter/FilterPage.css';
 import { dataList } from './constants';
 
 
-const FilterPage2 = () => {
+const FilterPage3 = () => {
 /* create and set the variable using useState*/
   const [selectedRating, setSelectedRating] = useState(null);
   const [selectedPrice, setSelectedPrice] = useState([2000, 50000]);
@@ -25,12 +25,12 @@ const FilterPage2 = () => {
     {
       id: 2,
       checked: false,
-      label: 'Group',
+      label: 'Official',
     },
     {
       id: 3,
       checked: false,
-      label: 'Portrait',
+      label: 'DJ',
     }
 
   ])
@@ -161,7 +161,7 @@ const FilterPage2 = () => {
   )
 }
 
-export default FilterPage2
+export default FilterPage3
 
 
 
