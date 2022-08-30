@@ -7,7 +7,7 @@ export const dataList = [
       vendorName: "The perfect wedding company",
       upload: 'Posted 2 hours ago',
       title: 'Wedding Planner',
-      image: 'https://lh4.googleusercontent.com/pMk564DN_kROnOowSyllat7-y0N3TazO5vA7HU2pPnFAq-Dv3kuRRig8kVUcZ9CEZUdS7ePn8k5bARJGyhCbzOOqQ1BsvSsLY7gdabB8L1AJXMfbw4_JaUROVSZJzFOnkPVW_NNM',
+      image: 'https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/05/daytime-wedding-decoration-ideas.jpg',
       details: 'Specialists in bespoke, stylish & elegant weddings in Gran Canaria. As experienced destination wedding planners and event organizers.',
       loves: 3,
       comments: 5,
