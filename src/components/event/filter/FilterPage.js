@@ -7,8 +7,18 @@
 // import CartSide from './CartSide';
 // import DecorationFilter from './DecorationFilter';
 
+// <<<<<<< HEAD
 // export default function ScrollableTabsButtonAuto() {
 //     const [value, setValue] = React.useState(0);
+// =======
+// const FilterPage = () => {
+//   const [selectedCategory, setSelectedCategory] = useState(null); /* create and set the variable using useState*/
+//   const [selectedRating, setSelectedRating] = useState(null);
+//   const [selectedPrice, setSelectedPrice] = useState([2000, 50000]);
+//   const [list, setList] = useState(dataList);   /* dataList is defined in constants.js */
+//   const [searchInput, setSearchInput] = useState('');
+//   const [resultsFound, setResultsFound] = useState(true);
+// >>>>>>> a3c438ce3bb0fa4054ef49dc6f7e178c0483fe57
 
 //     const handleChange = (event, newValue) => {
 //         setValue(newValue);

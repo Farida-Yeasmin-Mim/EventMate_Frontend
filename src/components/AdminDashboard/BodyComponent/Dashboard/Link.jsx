@@ -1,11 +1,10 @@
 import React from 'react'
 
-const temp = () => {
+export default function Link() {
   return (
     <div>
-      
+        <h1>Link</h1>
     </div>
   )
 }
 
-export default temp

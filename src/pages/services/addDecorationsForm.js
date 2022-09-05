@@ -45,11 +45,15 @@ const AddDecorationsForm = () => {
             password: password,
         };
 
-        axios.post('services', item)
-            .then((response) => {
-                setResult(response.data)
-                console.log(result.data);
-                navigate('/');
+        /* axios package is used to send the request from frontend to backend in react */ 
+        /* post is used to send the data from from frontend to backend*/ 
+        axios.post('services', item)          /* ('services'= 'url' , item= the data we want to send)  */ 
+         
+/*if post api can successfully send data, it will enter to '.then'(.then come from backend) or if not then '.catch' */   
+        .then((response) => {           /* "response" is send from backend */           
+                setResult(response.data)  /* response will be stored in "result" variable as it may not same always */
+                console.log(result.data); /* "console.log" to show what response came from backend */
+                navigate('/');            /* "navigate" is used to change the page (/ is home page) */
             })
             .catch(error => {
                 //this.setResult({ errorMessage: error.message });
@@ -57,8 +61,10 @@ const AddDecorationsForm = () => {
             });
     }
 
+    
+    
+    
     return (
-
 
         <Grid>
             <Paper elevation={10} style={paperStyle}>

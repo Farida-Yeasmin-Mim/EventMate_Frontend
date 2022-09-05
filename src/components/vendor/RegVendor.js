@@ -40,13 +40,11 @@ const RegVendor = () => {
             linkedin: linkedin,
             instagram: instagram,
             youtube:youtube,
-
-
-
             
         };
         console.log(localStorage.getItem('token'));
 
+       
         axios.post('vendorstore', item)
             .then((response) => {
                 setResult(response.data)
