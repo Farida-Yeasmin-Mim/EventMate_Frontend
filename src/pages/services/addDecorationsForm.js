@@ -24,7 +24,7 @@ const AddDecorationsForm = () => {
     const [build, setBuild] = useState(" ");
     const [colors, setColour] = useState(" ");
     const [password, setPassword] = useState(" ");
-    
+
 
     const [result, setResult] = useState(" ");
     const navigate = useNavigate();
@@ -45,12 +45,12 @@ const AddDecorationsForm = () => {
             password: password,
         };
 
-        /* axios package is used to send the request from frontend to backend in react */ 
-        /* post is used to send the data from from frontend to backend*/ 
-        axios.post('services', item)          /* ('services'= 'url' , item= the data we want to send)  */ 
-         
-/*if post api can successfully send data, it will enter to '.then'(.then come from backend) or if not then '.catch' */   
-        .then((response) => {           /* "response" is send from backend */           
+        /* axios package is used to send the request from frontend to backend in react */
+        /* post is used to send the data from from frontend to backend*/
+        axios.post('services', item)          /* ('services'= 'url' , item= the data we want to send)  */
+
+            /*if post api can successfully send data, it will enter to '.then'(.then come from backend) or if not then '.catch' */
+            .then((response) => {           /* "response" is send from backend */
                 setResult(response.data)  /* response will be stored in "result" variable as it may not same always */
                 console.log(result.data); /* "console.log" to show what response came from backend */
                 navigate('/');            /* "navigate" is used to change the page (/ is home page) */
@@ -61,9 +61,9 @@ const AddDecorationsForm = () => {
             });
     }
 
-    
-    
-    
+
+
+
     return (
 
         <Grid>
