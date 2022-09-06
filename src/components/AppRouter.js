@@ -169,12 +169,11 @@ import WidgetLg from './Dashboard/WidgetLg';
 import WidgetSm from './Dashboard/WidgetSm';
 // import Home from './Dashboard/Home';
 import UserList from './Dashboard/UserList';
-import User from './Dashboard/User';
 import Product from './Dashboard/Product';
 import ProductList from './Dashboard/ProductList';
 import Dashboard from './Dashboard/Dashboard';
 import NewUser from './Dashboard/NewUser';
-import NewProduct from './Dashboard/NewProduct';
+import NewProduct from './Dashboard/AddService';
 import PostItem from './feed/PostItem';
 import ProductDetails from './ProductDetails/ProductDetails';
 import HorizontalStepper from './feed/HorizontalStepper';
@@ -188,6 +187,14 @@ import FilterPage3 from './event/Music/FilterPage3';
 import DecorationFilter from './event/filter/DecorationFilter';
 import ServiceDetails from './event/ServiceDetails';
 import DecorationDetails from './ProductDetails/DecorationDetails';
+import PendingOrder from './Dashboard/PendingOrder';
+import AcceptOrder from './Dashboard/AcceptOrder';
+import PreviousOrder from './Dashboard/PreviousOrder';
+import CompanyDetails from './Dashboard/CompanyDetails';
+import AddPost from './Dashboard/AddPost';
+import AddService from './Dashboard/AddService';
+import PostList from './Dashboard/PostList';
+import Transaction from './Dashboard/Transaction';
 
 
 
@@ -246,12 +253,18 @@ function AppRouter(props) {
           <Route path="/widgetSm" element={<WidgetSm />} />
           <Route path="/home" element={<Home />} />
           <Route path="/userList" element={<UserList />} />
-          <Route path="/dashboard_user" element={<User />} />
+          <Route path="/companyDetails" element={<CompanyDetails />} />
           <Route path="/product" element={<Product />} />
           <Route path="/productList" element={<ProductList />} />
           <Route path="/dashboard/:id" element={<Dashboard />} />
           <Route path="/newUser" element={<NewUser />} />
-          <Route path="/newproduct" element={<NewProduct />} />
+          <Route path="/addServices" element={<AddService />} />
+          <Route path="/pendingOrder" element={<PendingOrder />} />
+          <Route path="/acceptOrder" element={<AcceptOrder />} />
+          <Route path="/previousOrder" element={<PreviousOrder />} />
+          <Route path="/addPost" element={<AddPost />} />
+          <Route path="/postList" element={<PostList />} />
+          <Route path="/transaction" element={<Transaction />} />
 
           {/* path="url" element="file name" */}
 

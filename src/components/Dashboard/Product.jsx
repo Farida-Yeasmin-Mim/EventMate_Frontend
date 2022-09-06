@@ -11,8 +11,6 @@ function Product() {
 
     return (
 
-        <div>
-        <Topbar/>
         <div className="container">
           <Sidebar />
 
@@ -84,7 +82,6 @@ function Product() {
     </div>
 
 
-    </div>
     </div>
 
   );

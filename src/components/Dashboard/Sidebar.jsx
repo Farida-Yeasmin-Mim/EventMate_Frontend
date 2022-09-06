@@ -68,19 +68,19 @@ function Sidebar(param) {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Events</h3>
                     <ul className="sidebarList">
-                        <Link to="/dashboard_user" className="link">
+                        <Link to="/pendingOrder" className="link">
                             <li className="sidebarListItem">
                                 <PermIdentityTwoToneIcon className="sidebarIcon" />
                                 Pending
                             </li>
                         </Link>
-                        <Link to="/product" className="link">
+                        <Link to="/acceptOrder" className="link">
                             <li className="sidebarListItem">
                                 <StorefrontTwoToneIcon className="sidebarIcon" />
                                 Accepted
                             </li>
                         </Link>
-                        <Link to="/product" className="link">
+                        <Link to="/previousOrder" className="link">
                             <li className="sidebarListItem">
                                 <StorefrontTwoToneIcon className="sidebarIcon" />
                                 Previous
@@ -93,19 +93,19 @@ function Sidebar(param) {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Edit</h3>
                     <ul className="sidebarList">
-                        <Link to="/dashboard_user" className="link">
+                        <Link to="/companyDetails" className="link">
                             <li className="sidebarListItem">
                                 <PermIdentityTwoToneIcon className="sidebarIcon" />
                                 Company Details
                             </li>
                         </Link>
-                        <Link to="/product" className="link">
+                        <Link to="/addServices" className="link">
                             <li className="sidebarListItem">
                                 <StorefrontTwoToneIcon className="sidebarIcon" />
                                 Add Service
                             </li>
                         </Link>
-                        <Link to="/product" className="link">
+                        <Link to="/addPost" className="link">
                             <li className="sidebarListItem">
                                 <StorefrontTwoToneIcon className="sidebarIcon" />
                                 Add Post
@@ -119,26 +119,24 @@ function Sidebar(param) {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
-                        <Link to="/userList" className="link">
+                        <Link to="/productList" className="link">
                             <li className="sidebarListItem">
                                 <PermIdentityTwoToneIcon className="sidebarIcon" />
                                 Service List
                             </li>
                         </Link>
-                        <Link to="/productList" className="link">
+                        <Link to="/postList" className="link">
                             <li className="sidebarListItem">
                                 <StorefrontTwoToneIcon className="sidebarIcon" />
                                 Post List
                             </li>
                         </Link>
+                        <Link to="/transaction" className="link">
                         <li className="sidebarListItem">
                             <AttachMoneyTwoToneIcon className="sidebarIcon" />
                             Transactions
                         </li>
-                        <li className="sidebarListItem">
-                            <AttachMoneyTwoToneIcon className="sidebarIcon" />
-                            Notifications
-                        </li>
+                        </Link>
 
                     </ul>
                 </div>

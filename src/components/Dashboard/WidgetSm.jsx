@@ -8,7 +8,8 @@ function WidgetSm() {
     <div className="widgetSm">
       <span className="widgetSmTitle">New Join Members</span>
       <ul className="widgetSmList">
-        
+
+
         <li className="widgetSmListItem">
           <img
             src="https://avatars.githubusercontent.com/u/76836136?s=400&u=6b029a033204aea30687591bedb424dcbfbea46a&v=4"
@@ -24,6 +25,7 @@ function WidgetSm() {
             Display
           </button>
         </li>
+
 
 
         <li className="widgetSmListItem">

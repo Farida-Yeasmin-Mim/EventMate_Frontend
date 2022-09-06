@@ -22,7 +22,7 @@ const rows = [
     { id: 9, serviceName: 'Party', price: 6587, check: 'Display' },
 ];
 
-export default function ProductList() {
+export default function Transaction() {
     return (
         <div>
             <div className="container">

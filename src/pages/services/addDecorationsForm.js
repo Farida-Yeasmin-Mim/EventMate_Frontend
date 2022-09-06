@@ -6,6 +6,7 @@ import { Link as RLink } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import Sidebar from '../../components/Dashboard/Sidebar';
 
 
 
@@ -65,6 +66,11 @@ const AddDecorationsForm = () => {
     
     
     return (
+
+        <div>
+      <div className="container">
+        <Sidebar/>
+
 
         <Grid>
             <Paper elevation={10} style={paperStyle}>
@@ -187,6 +193,10 @@ const AddDecorationsForm = () => {
 
             </Paper>
         </Grid>
+
+
+        </div>
+    </div>
 
     )
 }
