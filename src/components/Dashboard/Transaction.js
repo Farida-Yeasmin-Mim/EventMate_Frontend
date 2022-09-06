@@ -4,22 +4,21 @@ import Sidebar from './Sidebar';
 
 const columns = [
     { field: 'id', headerName: 'ID', width: 70 },
+    { field: 'plannerName', headerName: 'Planner Name', width: 130 },
     { field: 'serviceName', headerName: 'Service Name', width: 130 },
-    { field: 'price', headerName: 'Price(৳)', type: 'number', width: 110 },
-    { field: 'check', headerName: 'Check', width: 130 },
+    { field: 'date', headerName: 'Date', width: 130 },
     
 ];
 
 const rows = [
-    { id: 1, serviceName: 'Wedding', price: 35000, check: 'Display'},
-    { id: 2, serviceName: 'Birthday', price: 18342, check: 'Display' },
-    { id: 3, serviceName: 'Proposal', price: 49505, check: 'Display' },
-    { id: 4, serviceName: 'Event', price: 16390, check: 'Display' },
-    { id: 5, serviceName: 'Wedding', price: 34700, check: 'Display' },
-    { id: 6, serviceName: null, price: 15080, check: 'Display'},
-    { id: 7, serviceName: 'Birthday', price: 4440, check: 'Display' },
-    { id: 8, serviceName: 'Holud', price: 5680, check: 'Display' },
-    { id: 9, serviceName: 'Party', price: 6587, check: 'Display' },
+    { id: 1, plannerName: 'Farida', serviceName: 'Wedding', date: '3 jun,2022' },
+    { id: 2, plannerName: 'Yeasmin', serviceName: 'Birthday', date: '5 jul,2022' },
+    { id: 3, plannerName: 'Bushra', serviceName: 'Proposal', date: '9 sep,2022' },
+    { id: 4, plannerName: 'Kaniz', serviceName: 'Event', date: '25 Nov,2022' },
+    { id: 5, plannerName: 'Mahir', serviceName: 'Wedding', date: '14 Dec,2022' },
+    { id: 6, plannerName: 'Farida', serviceName: null, date: '3 jun,2022'},
+    { id: 7, plannerName: 'Farida', serviceName: 'Birthday', date: '3 jun,2022' },
+    { id: 8, plannerName: 'Farida', serviceName: 'Holud', date: '3 jun,2022' },
 ];
 
 export default function Transaction() {
@@ -28,7 +27,7 @@ export default function Transaction() {
             <div className="container">
                 <Sidebar />
                 <div style={{ height: 400, width: '100%' }}>
-                    <h1>Service List</h1><br/>
+                    <h1>Transaction List</h1><br/>
                     <DataGrid
                         rows={rows}
                         columns={columns}
