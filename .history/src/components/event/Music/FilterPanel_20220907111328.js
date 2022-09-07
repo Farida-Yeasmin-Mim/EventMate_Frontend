@@ -1,7 +1,7 @@
 import React from 'react'
 import FilterListToggle from '../../event/Photography/FilterListToggle';
 import { ratingList } from '../../event/Photography/constants';
-import '../filter/FilterPanel.css';
+import '../FilterPanel.css';
 import CheckboxProton from './CheckboxProton';
 import SliderProton from './SliderProton';
 

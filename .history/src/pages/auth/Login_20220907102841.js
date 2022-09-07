@@ -113,8 +113,8 @@ const Login = () => {
 
                 <br />
                 <Typography>Do you have any account?
+                    <Link to="/signup" style={{ textDecoration: 'none' }}>Sign up</Link>
                 </Typography>
-                <Link to="/signup" style={{ textDecoration: 'none' }}>Sign up</Link>
 
 
             </Paper>

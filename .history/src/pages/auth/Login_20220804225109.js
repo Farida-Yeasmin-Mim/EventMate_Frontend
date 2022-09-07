@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Grid, Paper, Avatar, TextField, Link, Typography } from '@mui/material';
+import React, {useState, useEffect} from 'react';
+import { Grid, Paper, Avatar, TextField, Link, Typography} from '@mui/material';
 import Button from '@mui/material/Button';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
@@ -14,18 +14,18 @@ const Login = () => {
     const avatarStyle = { backgroundColor: '#72b972' }
     const paperStyle = { padding: 30, height: '75vh', width: 280, margin: '20px auto' }  //creating paperstyle variable by using const
     const btnStyle = { margin: '8px 0' }
-
-    const [username, setUsername] = useState(" ");
-    const [password, setPassword] = useState(" ");
+    
+    const [username, setUsername]= useState(" ");
+    const [password, setPassword]= useState(" ");
     // const [result, setResult]= useState(" "); 
     const navigate = useNavigate();
 
-
-    async function submit() {
+    
+    async function submit(){
         // console.warn(username, password)
 
         let item = {
-            email: username,
+            email: username, 
             password: password
         };
 
@@ -37,10 +37,10 @@ const Login = () => {
         let result = {};
 
 
-        axios.post('login', item)
+        axios.post('login',item)
             .then((response) => {
                 // setResult(response.data)
-                result = response.data
+                result= response.data
                 console.log(result.data);
                 console.log("Token " + result.token);
                 localStorage.setItem("user-name", result.data.name)
@@ -51,8 +51,8 @@ const Login = () => {
             .catch(error => {
                 //this.setResult({ errorMessage: error.message });
                 console.error('There was an error!', error);
-            });
-
+        });
+        
     }
 
     return (
@@ -72,7 +72,7 @@ const Login = () => {
                         label="Username"
                         name="username"
                         autoComplete="username"
-                        onChange={(e) => setUsername(e.target.value)}
+                        onChange={(e)=>setUsername(e.target.value)}
                     />
                 </Grid>
                 <br />
@@ -86,11 +86,11 @@ const Login = () => {
                         type="password"
                         id="password"
                         autoComplete="new-password"
-                        onChange={(e) => setPassword(e.target.value)}
+                        onChange={(e)=>setPassword(e.target.value)}
                     />
                 </Grid>
-
-                <br />
+                        
+                <br/>       
                 <FormControlLabel
                     control={
                         <Checkbox
@@ -98,23 +98,23 @@ const Login = () => {
                             color="primary"
                         />
                     }
-
+                    
                     label="Remember me"
                 />
                 <Button onClick={submit} type='submit' variant="contained" style={btnStyle} fullWidth>Log In</Button>
 
-                <br />
-                <br />
-
+                <br/>
+                <br/>
+               
                 {/* Typography used to standardize the text */}
-                <Typography textAlign='center'>
+                <Typography textAlign= 'center'>
                     <Link href="#">Forgot Password</Link>
                 </Typography>
 
-                <br />
+                <br/>
                 <Typography>Do you have any account?
+                    <Link href="#">Sign Up</Link>
                 </Typography>
-                <Link to="/signup" style={{ textDecoration: 'none' }}>Sign up</Link>
 
 
             </Paper>

@@ -196,7 +196,7 @@ import AddPost from './Dashboard/AddPost';
 import AddService from './Dashboard/AddService';
 import PostList from './Dashboard/PostList';
 import Transaction from './Dashboard/Transaction';
-import LandingPage from './landingPage/LandingPage';
+import Transaction from './landingPage/LandingPage';
 
 
 

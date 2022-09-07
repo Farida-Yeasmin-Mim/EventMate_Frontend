@@ -24,7 +24,7 @@ const ListItem = ({
 
       {/* Header */}
       <header>
-        <h4>{item.name}</h4>
+        <h4>{item.title}</h4>
         <span>
           <StarIcon className="star" /><span>{item.rating}</span>
           <InsertCommentIcon className="review" /><span>{item.rating}</span>

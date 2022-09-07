@@ -1,7 +1,7 @@
 import React from 'react'
 import FilterListToggle from '../../event/Photography/FilterListToggle';
 import { ratingList } from '../../event/Photography/constants';
-import '../filter/FilterPanel.css';
+import '../../event/filter/FilterPanel.css';
 import CheckboxProton from './CheckboxProton';
 import SliderProton from './SliderProton';
 
@@ -12,7 +12,7 @@ const FilterPanel = ({
 
   decorations,
   changeChecked,
-
+  
   changePrice,
   selectedPrice,
 }) => {

@@ -44,10 +44,10 @@ function DecorationDetails(props) {
                         </div>
 
 
-                        <p>Vendor: {details.vendor}</p>
+                        <p>Vendor name: {details.vendor}</p>
                         <p>{details.description}</p>
-                        <p>Inform Before: {details.serviceTime}</p>
-                        <p>Build Time: {details.Build}</p>
+                        <p>Inform Before:{details.serviceTime}</p>
+                        <p>Build Time:{details.Build}</p>
                         <p>{details.placement} Decoration</p>
                         <p>Minimum Space needed: {details.space}</p>
                         <p>Maximum Guest: {details.guest}</p>

@@ -162,9 +162,9 @@ const Signup = () => {
 
 
                 <Typography>Already a Member?
-
+                    <Link href="#">Log In</Link>
                 </Typography>
-                <Link to="/login" style={{ textDecoration: 'none' }}>Log in</Link>
+
             </Paper>
         </Grid>
 

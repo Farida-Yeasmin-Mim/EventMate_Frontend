@@ -1,16 +1,4 @@
-export const categoryList = [
-  {
-    id: 1,
-    value: 'decoration',
-    label: '💫 Decoration',
-  },
 
-  {
-    id: 2,
-    value: 'catering',
-    label: '🍕 Catering',
-  },
-];
 
 // For Rating List
 export const ratingList = [
