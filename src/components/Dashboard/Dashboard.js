@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import NewProduct from "./NewProduct";
+import NewProduct from "./AddService";
 import NewUser from "./NewUser";
 import Product from "./Product";
 import ProductList from "./ProductList";
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
-import User from "./User";
+import User from "./CompanyDetails";
 import UserList from "./UserList";
 import './styles/dashboard.css'
 import { useParams } from 'react-router-dom';
