@@ -1,0 +1,3 @@
+Frontend(Website)- https://github.com/Farida-Yeasmin-Mim/EventMate_Frontend
+Backend - https://github.com/MomtahinaRahman/eventmate_backend
+App - https://github.com/Kaniz-Fatema-Nabila/EventMate_app
